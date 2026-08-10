@@ -1,0 +1,7 @@
+Hi! Junior Applied AI & Data Scientist role caught my eye.
+
+MEng Engineering Mathematics (First Class, Bristol) so the quantitative side is covered. At LINQ I built the ML matching pipeline end-to-end: Gemini embeddings with pgvector HNSW indexes for vector similarity search, Groq LLM re-ranking, all served through FastAPI and deployed on AWS with Docker containers via a full CI/CD pipeline (GitHub Actions to ECR to ECS). Also trained a coordinate-based neural network vs CNN for sign language detection at a hackathon and won $2.5K.
+
+I'll be upfront, I don't have deep PyTorch or GCP experience yet, but I've shipped production AI systems as a solo engineer and I pick things up quickly. Would love to hear more about what you're building for the private markets space.
+
+Aaron

@@ -1,0 +1,9 @@
+ScrollBuddy (Aug 2025 - Present): Built and shipped an anti-doomscrolling iOS app to the App Store as a solo founder. 750 users, 2 premium subscribers, 2M+ organic TikTok views through content-led growth. Paused it for 4 months while working at LINQ, resumed last month and hit 550 new users in that month alone. Already receiving emails from users saying it genuinely reduced their scrolling habits. That's the thing I'm most proud of: building something that's actually changing how people use their phones.
+
+LINQ (Sep 2025 - Jan 2026): Sole technical lead for an AI-powered professional networking platform partnered with Simon Squibb. Built the entire stack alone: React Native mobile app, FastAPI backend, PostgreSQL database, and AWS cloud infrastructure from scratch (CloudFront CDN -> ALB -> ECS Fargate -> RDS in a private subnet, all via Terraform IaC). 750 users. The technical depth I gained in 4 months was more than the previous 2 years combined, largely because I had to figure out production cloud architecture with real users depending on it.
+
+Encode Club Hackathon ($2.5K Winner, Feb 2025): Built a sign language detection system. Pivoted mid-hackathon from an image-based CNN to a coordinate-based neural network using Google MediaPipe, hitting 70% accuracy on ASL. Used Filecoin for decentralised model storage and Lilypad for distributed compute. Hardest technical challenge I've faced in a short timeframe.
+
+Aviini Ltd (Jul 2023 - Jan 2025): Co-founded an ecommerce business. £25K profit at 25-35% margins over 18 months. Built eBay/Etsy API integrations for automated revenue tracking.
+
+MEng Engineering Mathematics, First Class - University of Bristol (2024).

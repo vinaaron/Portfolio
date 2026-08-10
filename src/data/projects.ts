@@ -19,7 +19,7 @@ export const projects: Project[] = [
     title: "ScrollBuddy",
     tagline: "Break Free from the Feed",
     description:
-      "Anti-doomscrolling app with accountability partner system. Live on the App Store. 2M+ pre-launch views on TikTok. Partner controls app access instead of relying on willpower.",
+      "Anti-doomscrolling app where a friend guards your screen time. Live on the App Store: 2,000+ signups, 696 buddy connections. Blocker edits need your buddy's approval; streaks break on circumvention. 2M+ organic views.",
     technologies: ["React Native", "App Store"],
     links: {
       live: "https://doomscrollr.vercel.app",

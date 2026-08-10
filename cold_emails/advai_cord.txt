@@ -1,0 +1,7 @@
+Hi! Full Stack Developer role looks like a great fit. I built a production platform as a solo engineer: Python/FastAPI backend containerised with Docker and deployed on ECS Fargate, React Native mobile app, AWS infrastructure with Terraform IaC, and CI/CD via GitHub Actions to ECR.
+
+What draws me is that AI assurance is clearly about to explode as a field and Advai seems to be right at the front of it. I want to be part of something fast-moving where the space itself is still being defined. No .NET experience but Python and React are my core and I pick up new tools quickly.
+
+Portfolio: portfolio-zeta-ecru-53.vercel.app
+
+Aaron

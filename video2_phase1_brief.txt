@@ -1,0 +1,372 @@
+VIDEO #2 - PHASE 1 INFO
+========================
+
+Aaron's information for Phase 1 ("Insights from the Encode Club
+Filecoin hackathon — Feb 2025"). Raw information only. Editor to
+interpret and structure.
+
+This brief is the deeper-dive companion to the thin paragraph in
+video_phase2_brief.txt under "SIGN LANGUAGE DETECTION — HACKATHON".
+That paragraph stays as cross-reference; this is where the story
+actually lives.
+
+
+THE HEADLINE FACT
+-----------------
+Encode Club, Filecoin-themed hackathon. February 2025. Aaron
+won $2,500 across two bounties — Storacha and Lilypad. His
+first hackathon. Built a sign-language detection web app
+backed by decentralised storage and decentralised compute.
+
+Aaron's caveat on the win:
+"I did have probably much more time as I had nothing else I
+was working on and a great foundation from the uni CNN and
+mediapipe model work. It was a great feeling and the family
+were happy."
+
+
+WHAT ENCODE CLUB IS
+-------------------
+A hackathon-hosting organisation that runs events across AI,
+web3, and crypto. The Filecoin hackathon Aaron joined was
+specifically about building on web3 decentralised storage and
+compute technologies. Each provider in the stack — Filecoin,
+Storacha, Lilypad, Akave, others — put up their own bounty.
+
+Format: 2 weeks of seminars and lessons → 2 weeks of building
+→ submission → judging.
+
+
+WHERE AARON WAS BEFORE THE HACKATHON
+------------------------------------
+Aaron's words:
+"In February I was just rotting, not knowing what to do
+because I had just come out of the ecommerce journey and
+unsure about the future."
+
+Context: this is post-Aviini. Aviini (the e-commerce business
+covered in video_phase2_brief.txt) had just ended via IP /
+fake-sue concerns around January 2025 — 18 months of work
+ending unwillingly. The gap between Aviini ending and the
+hackathon starting was literally days, not weeks.
+
+Important framing for the editor: this is NOT a depressive-trough
+story. Aaron's relationship to quitting back then was
+behavioural — he'd actually quit things rather than agonise
+over whether to. So Feb 2025 reads as "in motion but aimless"
+rather than "stuck in a hole". The viewer can relate to "I just
+lost something I'd been building, what now?"
+
+
+THE WRONG MESSAGE (the door-opener)
+-----------------------------------
+Aaron meant to message a uni friend (same Bristol Engineering
+Maths course as Aaron) who was doing a PhD involving LLMs. He
+wanted to ask about MCPs and "what's up and coming in LLMs that
+I could leverage into a product or service."
+
+He sent the message to a different uni friend by mistake — same
+course, same year-group, wrong thread.
+
+Aaron's actual message (07:06, screenshot exists, recipient name
+to be masked or off-screen if shown on camera):
+"what you are actually learning about? There's a few things I
+want to try implementing with an LLM and was wondering if you
+would have any thoughts about them!!"
+
+The wrong-thread friend's reply (08:59 - 09:00):
+"hey aaron"
+"I'm not doing a PhD. [other friend] is doing one involving
+LLMs maybe we spoke about it"
+"I came across your YouTube channel the other day 👀"
+
+The conversation then became a normal catch-up — what each of
+them was up to — and that's where the wrong-thread friend
+mentioned she was supporting the Encode Club hackathon's
+provider sessions and helping hackathon partakers. The Filecoin
+hackathon was about to start. Aaron joined.
+
+A note Kharel may want to use as a bookend beat: in the same
+reply where she corrected Aaron, she mentioned she'd just found
+his YouTube channel. So the chain becomes — YouTube viewer →
+uni friend → wrong message → hackathon → $2,500 win → and now
+Aaron is making YouTube content again with this very video.
+
+
+THE TEAMMATE (anonymised)
+-------------------------
+The wrong-thread friend joined Aaron's hackathon project as a
+teammate. Important context for tone — she was a host/support
+person for Encode Club's provider sessions and the hackathon's
+partakers (NOT the lead of the org). She was scared her
+supervisors at Encode Club would catch her competing in events
+she was supporting.
+
+Her stealth measures during the hackathon (Aaron's words):
+"She would list herself with different names, add commits with
+her personal account, when she would join office hours talks
+with the provider learning sessions she would ask questions
+with different names."
+
+She couldn't run most of the code on her laptop — so she ended
+up not being technically useful. Where she was useful, in
+Aaron's words:
+"Understanding what we were building and making it align best
+with the bounties and how to finalise the presentation. She
+literally had done half a year worth of them."
+
+Editor note: keep her anonymous on camera. Don't name her, don't
+show her face, don't show un-masked screenshots that include her
+display name. The brief uses "the teammate" / "the uni friend"
+as placeholders.
+
+
+THE PROJECT CHOICE (the honest version)
+---------------------------------------
+The build: a sign language detection web app where users could
+contribute new ASL training data. That data would be stored on
+decentralised storage (Storacha), and the model could later be
+retrained on it. Inference itself ran on decentralised compute
+(Lilypad).
+
+Aaron's confession on why this idea — and how it got picked so
+fast:
+"This was kinda a hack because the CNN and the mediapipe
+approaches were things I had done for a university project. I
+had the CNN one from the get go and I had to upgrade the
+mediapipe approach because the accuracy was better. Both were
+terrible accuracy wise — they would guess the wrong letter —
+but the purpose was to demonstrate the use case rather than
+optimising the model."
+
+Why this idea won the team's vote without much debate:
+"It could hit multiple bounties but not too many as to spread
+ourselves too thin."
+
+Editor note: this is the "demo over perfect" beat. The model
+was bad on purpose. The win came from showing the use-case
+clearly, not from optimising the underlying ML. Worth flagging
+to the audience as a supporting lesson without making it the
+spine.
+
+
+THE LEARNING WEEKS (the seminars Aaron didn't really attend)
+-----------------------------------------------------------
+2 weeks of provider seminars and onboarding sessions. Aaron's
+honest version of what he actually did during them:
+"Not really looking into anything but playing around with
+cursor and gpt at the time with these different technologies
+and trying to set them up and get them to work."
+
+Per-provider impressions:
+- Filecoin: "No clue how anything worked with this node concept
+  and thinking how the hell am I going to do anything in this
+  hackathon."
+- Storacha: "The most normal API to setup and was fairly
+  intuitive."
+- Lilypad: Made him learn Docker concepts — especially building
+  images so random computers in the network could run the
+  model. The biggest grey area.
+
+
+THE BUILD WEEKS
+---------------
+Coding stack: Aaron + Cursor + GPT. He flags this as his
+"early entry into agentic coding" — Feb 2025 was very early
+for that style of working.
+
+Aaron's words on the texture of the build:
+"This was when I enjoyed coding more because of all these
+tools allowing me to get to the satisfying outcome of a
+successful result faster. I do remember the phase of the first
+day not understanding anything at all and then the next
+grasping things and moving with more clarity. The mind is
+weird."
+
+The Lilypad / Docker grind: slow steady grind across many
+days, no specific "throw the laptop" peak. The emotional
+centre of the build is the day-1 → day-2 mental flip, not a
+breakthrough night.
+
+A specific scene Kharel can use for B-roll:
+- Location: Farringdon station (or thereabouts — definitely
+  not King's Cross), London
+- Aaron is on the train / at the station, on the phone with
+  the teammate
+- Topic of the call: deciding which idea to pursue, which
+  bounties to prioritise, the awkward fact that the teammate
+  couldn't get anything running on her laptop
+- Voiceover-friendly mood: "I loved that I felt like I was
+  doing things and I was learning."
+
+Family context, in Aaron's words:
+"Everyone looking at me like why are you working so hard for
+this side project — but to be fair my parents were also
+respecting the effort."
+
+
+PRESENTATION + SUBMISSION
+-------------------------
+Day-before crunch. Recording the demo, making the slideshow,
+framing it for the bounty judges.
+
+Aaron's words:
+"My friend who had been fairly out the loop did help for this
+as this is the best place but even then it was mostly the day
+before so optimisations were not made that much."
+
+The submission video is on Aaron's YouTube channel — search
+"sign language detection submission" for the original.
+
+
+THE WIN
+-------
+The teammate (Becca, anonymised on camera) messaged Aaron with
+the result.
+
+In Aaron's words:
+"Rebecca messaged me and was very surprised because winning on
+your first time is quite a feat apparently."
+
+Bounties: Storacha + Lilypad = $2,500 total. Caveat — about
+$500 of that was in Lilypad currency that Aaron has never
+actually received.
+
+Family reaction: parents and family were happy.
+
+A vulnerable confession from Aaron worth using verbatim. He
+volunteered this without prompting and it's the kind of
+honesty that makes the video feel real:
+"This was a cv play as well so that was a nice thought at the
+time, which is shameful to say such a meaningless thing but
+it was a thought."
+
+Editor note: this CV-play self-judgment is a strong beat. A
+viewer with their own "I'm doing this for X but really also
+for Y" tension will recognise themselves. Don't sand it down.
+
+
+WHAT THE WIN ACTUALLY DID (the year after — the lesson)
+-------------------------------------------------------
+This is the spine of the video's takeaway, and Aaron's answer
+to it course-corrects mid-sentence in a way that's the most
+honest version of the truth.
+
+Aaron's words (including the self-correction):
+"It gave me more confidence in the things I was building had
+value — but tbh it did not. It more made me think I can
+showcase my value to others through that hackathon win. It
+was a real world proof of my value. It still did not solidify
+the belief that my other endeavours were valuable. Joining
+Cogram was what did that for my pursuit — like LINQ and
+ScrollBuddy and the other failed web apps."
+
+The distinction the brief is asking Kharel to surface:
+- The hackathon delivered EXTERNAL validation: a CV line, a
+  dollar number, the dopamine of a stranger's "you won".
+- The hackathon did NOT deliver INTERNAL validation: the
+  question "is what I'm pursuing actually worth pursuing"
+  stayed open.
+- INTERNAL validation came later, from sustained work — the
+  Cogram contractor relationship.
+
+Editor framing for the audience persona: do not let the video
+imply a single hackathon win cures self-doubt. The honest
+takeaway is closer to "one win is a data point, not a
+diagnosis. Keep going."
+
+
+POSSIBLE STORY ANGLES (Kharel's call)
+-------------------------------------
+The brief surfaces three candidate framings. Aaron's lean is
+A+B as the spine, with C as a supporting beat. Kharel has
+final call.
+
+A. "The Wrong Message" — luck favours those who message. The
+   hackathon happened because of an accidental DM. Hook
+   strength: very high. The cold open writes itself.
+
+B. "I Had Nothing And That Was Enough" — post-Aviini-collapse
+   aimlessness was the state in which the opportunity
+   surfaced. Aaron didn't really learn during the seminars —
+   he fumbled with Cursor + GPT. He recycled a uni project.
+   He still won. Hook strength: high. Carries the lesson.
+
+C. "Demo Over Perfect" — the model was bad on purpose. The
+   use-case demo was the win. Aaron picked the project
+   because it stacked bounties without spreading thin. Hook
+   strength: medium (more niche to creators/builders). Best
+   used as a supporting beat in the build section, not the
+   spine.
+
+Aaron's lean (10 May 2026): A as the cold-open hook + B as the
+spine + C as a supporting build-section beat. Lesson at the
+end is the external-vs-internal-validation distinction from
+the previous section.
+
+
+AUDIENCE PERSONA + THE ONE ACTION (the underpinning)
+----------------------------------------------------
+Persona: a young viewer who has already decided to do a thing
+and isn't acting on it. The video's job is to win against
+their mind so they follow through with intention.
+
+The single direct action Aaron wants the video to drive — and
+the underpinning Kharel can build the whole video around:
+
+> Send the message you've been hesitating on.
+
+The one to the friend, the contact, the mentor, the stranger
+on Twitter, the recruiter, the partner, the person whose work
+you admire. Even if you don't know exactly what you want from
+them. Aaron's whole story started with a typo'd DM that was
+meant for someone else.
+
+The video should land on this verb. Aaron's lean is to keep
+the wording exact: "send the message". The editor can
+elaborate — Kharel may want to echo it in the cold open AND
+the closing beat for symmetry — but the underpinning verb
+stays the same.
+
+
+VIDEO FORMAT TARGET
+-------------------
+8-12 minute long-form on YouTube. Short-form clips can be
+cut from the long-form version afterwards. The 8-12 min length
+gives Kharel room to: cold open with the wrong message, set
+up the post-Aviini gap, walk through the learning + build with
+B-roll, sit with the win, and land on the external-vs-internal
+distinction without rushing.
+
+
+KEY ASSETS AVAILABLE
+--------------------
+- WhatsApp screenshot of the wrong-message thread (with names
+  visible — masking required if used on screen)
+- Original submission video on Aaron's YouTube channel ("sign
+  language detection submission")
+- The uni CNN and mediapipe project files Aaron recycled (can
+  be sourced if needed for B-roll of pre-existing work)
+
+
+CROSS-REFERENCES
+----------------
+- video_phase2_brief.txt: contains the older thin paragraph
+  about this hackathon under "SIGN LANGUAGE DETECTION —
+  HACKATHON". That paragraph quoted Aaron's earlier framings
+  of the lesson — "always try" and "monetary target →
+  learning about cool tech". This brief supersedes those
+  framings with the more honest external-vs-internal version
+  above. Do not duplicate the earlier framings in the new
+  video.
+- video_phase2_brief.txt: also note "thoughts2actions" was
+  listed there as Jan 2025. Aaron's current memory is fuzzy on
+  whether thoughts2actions came before or after this hackathon.
+  For THIS video the pre-context is post-Aviini, not
+  post-thoughts2actions. If thoughts2actions is referenced in
+  the cut, double-check the ordering with Aaron first.
+
+
+=====
+END
+=====

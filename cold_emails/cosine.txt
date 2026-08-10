@@ -1,0 +1,12 @@
+EMAIL TO: founders@cosine.sh
+SUBJECT: Heard the Latent Space ep - quick question from a fellow builder
+
+Hi Alistair,
+
+I've been building for about 1.5 years since finishing my MEng at Bristol - ran an e-commerce business, did a technical co-founder stint building a full production stack (Python/FastAPI, PostgreSQL, AWS, React Native), and now I'm building ScrollBuddy, an anti-doomscrolling iOS app that's hit 2M+ organic TikTok views.
+
+I've learned loads doing it solo but I'm starting to feel like joining an early-stage team is where I'd grow fastest right now. I saw you joined Fancy pretty early on and built everything end-to-end before it got acquired into GoPuff - and that seems like it set up everything that came after.
+
+At my stage, would you lean towards joining a small team to learn or keep grinding solo? Any advice would be really appreciated.
+
+Aaron

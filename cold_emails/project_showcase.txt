@@ -1,0 +1,9 @@
+At LINQ, I was the sole engineer building an AI-powered professional networking platform from zero to production. We wanted to match professionals based on what they could actually offer each other, not just job titles.
+
+I built the full stack alone. Backend: FastAPI + PostgreSQL (20+ tables, 70 migrations), with pgvector HNSW indexes for vector similarity and PostGIS for geo-ranking. For matching, I benchmarked embedding models, chose Gemini 752D embeddings, and added Groq LLM re-ranking achieving 80-90% match accuracy in under 5 seconds.
+
+Infrastructure: AWS (CloudFront, ALB, ECS Fargate auto-scaling, RDS), all Terraform IaC, CI/CD via GitHub Actions through ECR. OIDC auth to AWS with no long-lived credentials.
+
+Mobile: React Native with Zustand + React Query + MMKV encrypted storage + Auth0 JWT with automatic token refresh. 1,035+ TypeScript files, 50+ service modules.
+
+Every architectural decision was mine. Team of four, I was the only engineer.

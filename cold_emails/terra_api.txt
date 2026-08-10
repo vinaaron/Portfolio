@@ -1,0 +1,13 @@
+Subject: ScrollBuddy x Terra - screen time meets wearable data
+
+Hi Kyriakos,
+
+I'm building ScrollBuddy, an anti-doomscrolling iOS app (2M+ organic TikTok views, live on the App Store). I've been thinking about adding a health data layer - showing users how their screen habits correlate with sleep quality, HRV, and activity from their wearables. Terra's API looks like exactly what I'd need for that.
+
+I also applied for your SWE role - I built a production Python/FastAPI backend with PostgreSQL and AWS infrastructure at my last startup, so the stack lines up.
+
+Would be great to chat about either. Happy to jump on a quick call anytime.
+
+Aaron Vinod
+MEng Engineering Mathematics, University of Bristol
+github.com/ce20480 | +44 7476 904065

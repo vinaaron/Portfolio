@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Declaration - Transport Receipt</title>
+<style>
+  @media print {
+    body { margin: 0; padding: 20mm; }
+    .no-print { display: none; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #1a1a1a; padding: 40px; max-width: 700px; margin: 0 auto; font-size: 14px; line-height: 1.5; }
+  .header { text-align: center; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 2px solid #1a1a1a; }
+  .header h1 { font-size: 20px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px; }
+  .header p { color: #666; font-size: 12px; }
+  .section { margin-bottom: 24px; }
+  .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #888; margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 8px 0; vertical-align: top; }
+  td:first-child { font-weight: 600; width: 160px; color: #444; }
+  .trip { background: #f8f8f8; border-radius: 6px; padding: 16px; margin-bottom: 12px; }
+  .trip-header { font-weight: 600; margin-bottom: 8px; }
+  .total-row { border-top: 2px solid #1a1a1a; margin-top: 20px; padding-top: 12px; display: flex; justify-content: space-between; font-size: 16px; font-weight: 700; }
+  .note { background: #fffbe6; border-left: 3px solid #e6c200; padding: 12px 16px; margin: 24px 0; font-size: 13px; color: #665500; }
+  .signature-block { margin-top: 48px; padding-top: 24px; border-top: 1px solid #ddd; }
+  .signature-line { margin-top: 40px; display: flex; justify-content: space-between; }
+  .sig-field { width: 45%; }
+  .sig-field .line { border-bottom: 1px solid #1a1a1a; height: 30px; margin-bottom: 4px; }
+  .sig-field .label { font-size: 11px; color: #888; }
+  .no-print { text-align: center; margin-bottom: 20px; padding: 12px; background: #e8f4ff; border-radius: 6px; font-size: 13px; color: #0066cc; }
+</style>
+</head>
+<body>
+
+<div class="no-print">Print this page to PDF: <strong>Cmd + P</strong> &rarr; Save as PDF</div>
+
+<div class="header">
+  <h1>Expense Declaration</h1>
+  <p>Cash Transaction &mdash; Vendor Receipts Attached</p>
+</div>
+
+<div class="section">
+  <div class="section-title">Claimant</div>
+  <table>
+    <tr><td>Name</td><td>Aaron Vinod</td></tr>
+    <tr><td>Company</td><td>Cogram Technologies GmbH (contractor)</td></tr>
+    <tr><td>Purpose of Travel</td><td>Cogram team offsite, Istanbul</td></tr>
+    <tr><td>Travel Dates</td><td>2 March 2026 &ndash; 6 March 2026</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <div class="section-title">Transport Details</div>
+
+  <div class="trip">
+    <div class="trip-header">Trip 1 &mdash; Airport to Hotel</div>
+    <table>
+      <tr><td>Date</td><td>2 March 2026</td></tr>
+      <tr><td>From</td><td>Istanbul Sabiha G&ouml;k&ccedil;en Airport (SAW)</td></tr>
+      <tr><td>To</td><td>10 Karaköy Hotel, Istanbul</td></tr>
+      <tr><td>Transport Type</td><td>PRiME TUR transfer service (cash)</td></tr>
+      <tr><td>Amount</td><td>2,300 TRY</td></tr>
+    </table>
+  </div>
+
+  <div class="trip">
+    <div class="trip-header">Trip 2 &mdash; Hotel to Airport</div>
+    <table>
+      <tr><td>Date</td><td>6 March 2026</td></tr>
+      <tr><td>From</td><td>10 Karaköy Hotel, Istanbul</td></tr>
+      <tr><td>To</td><td>Istanbul Sabiha G&ouml;k&ccedil;en Airport (SAW)</td></tr>
+      <tr><td>Transport Type</td><td>PRiME TUR transfer service (cash)</td></tr>
+      <tr><td>Amount</td><td>2,300 TRY</td></tr>
+    </table>
+  </div>
+
+  <div class="total-row">
+    <span>Total</span>
+    <span>4,600 TRY</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Payment</div>
+  <table>
+    <tr><td>Payment Method</td><td>Cash (Turkish Lira)</td></tr>
+    <tr><td>Currency</td><td>TRY</td></tr>
+  </table>
+</div>
+
+<div class="note">
+  Both journeys were paid in cash to PRiME TUR Organizasyon Limited Şirketi, a registered Istanbul transfer service. Handwritten vendor receipts (receipt nos. 000357 &amp; 000358) are attached on the following page as supporting documentation.
+</div>
+
+<div class="signature-block">
+  <p>I declare that the above expenses were genuinely incurred for business purposes and that the amounts stated are accurate.</p>
+  <div class="signature-line">
+    <div class="sig-field">
+      <div class="line"></div>
+      <div class="label">Signature</div>
+    </div>
+    <div class="sig-field">
+      <div class="line" style="display: flex; align-items: flex-end; padding-bottom: 4px; font-size: 15px;">6 March 2026</div>
+      <div class="label">Date</div>
+    </div>
+  </div>
+</div>
+
+<div style="page-break-before: always; padding-top: 20px;">
+  <div class="header">
+    <h1>Appendix</h1>
+    <p>Vendor Receipts &mdash; PRiME TUR Organizasyon Limited Şirketi</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="/Users/avini/Downloads/IMG_0045.jpg" style="max-width: 100%; max-height: 800px; border: 1px solid #ddd; border-radius: 4px;" />
+  </div>
+  <div style="margin-top: 16px; font-size: 12px; color: #666;">
+    <table>
+      <tr><td style="font-weight: 600; width: 160px;">Receipt No. 000358</td><td>02/03/2026 &mdash; Sabiha G&ouml;k&ccedil;en &rarr; Karaköy &mdash; 2,300 TRY</td></tr>
+      <tr><td style="font-weight: 600;">Receipt No. 000357</td><td>06/03/2026 &mdash; Karaköy &rarr; Sabiha G&ouml;k&ccedil;en &mdash; 2,300 TRY</td></tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

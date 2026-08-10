@@ -10,7 +10,7 @@ export function HeroContent() {
       </h1>
       <p className={styles.role}>Engineer & Founder</p>
       <p className={styles.subtitle}>
-        Building products end-to-end: React Native to AWS infrastructure.
+        Product engineer shipping full-stack with an agent-first workflow. Founder of ScrollBuddy, live on the App Store.
       </p>
     </div>
   );

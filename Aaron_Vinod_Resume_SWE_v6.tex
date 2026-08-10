@@ -1,0 +1,141 @@
+%-------------------------
+% Resume in Latex - SWE v6 (1 Page, Engineering-Depth, ATS Optimized)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Aaron Vinod}} & Email: \href{mailto:aaronvinod25@gmail.com}{aaronvinod25@gmail.com}\\
+  Cambridge, UK & Mobile: +44 7476 904065 \\
+  \href{https://github.com/ce20480}{GitHub: github.com/ce20480} | \href{https://portfolio-zeta-ecru-53.vercel.app/}{Portfolio} & \href{https://linkedin.com/in/aaron-vinod-a80016243}{LinkedIn: aaron-vinod-a80016243}\\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\small{Full-stack engineer with production experience: \textbf{React Native}, \textbf{FastAPI}, \textbf{PostgreSQL}, \textbf{AWS}. Designed schemas with \textbf{70+ migrations}, \textbf{pgvector} similarity search, and \textbf{PostGIS} geo-indexing. Shipped 2 apps with \textbf{Terraform} IaC and \textbf{Sentry}/CloudWatch observability.}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Bristol}{Bristol, UK}
+      {MEng Engineering Mathematics, First Class Honours}{Sep 2020 -- Jun 2024}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LINQ}{Remote}
+      {CTO \& Technical Co-founder}{Sep 2025 -- Jan 2026}
+      \resumeItemListStart
+        \resumeItem{Database \& API Design}
+          {Designed \textbf{PostgreSQL} schema (\textbf{20+ tables}, \textbf{70 Alembic migrations}) with \textbf{pgvector HNSW} indexes for vector similarity and \textbf{PostGIS} geo-indexes for distance ranking. Built async \textbf{FastAPI} backend with \textbf{repository pattern}, \textbf{dependency injection}, and \textbf{Pydantic} validation}
+        \resumeItem{Mobile Architecture}
+          {Engineered \textbf{React Native} app with \textbf{Zustand} + \textbf{React Query} + \textbf{MMKV} three-layer state architecture (\textbf{1,035+ TypeScript files}, \textbf{50+ service modules}). Implemented \textbf{Auth0 JWT} with automatic token refresh and Axios interceptor queue preventing concurrent \textbf{401} refresh storms}
+        \resumeItem{Infrastructure as Code}
+          {Designed \textbf{CI/CD} pipeline (\textbf{GitHub Actions} $\rightarrow$ ECR $\rightarrow$ \textbf{ECS Fargate}) with \textbf{Terraform} IaC and \textbf{OIDC} auth to AWS eliminating long-lived credentials. Monitoring via \textbf{Sentry} + \textbf{CloudWatch} + \textbf{structlog}}
+        \resumeItem{Auth \& Security}
+          {Built multi-provider \textbf{OIDC} auth interface (Auth0, Keycloak, Cognito) with \textbf{JWT-based RBAC}, CloudFront origin validation, Security Groups. \textbf{5h access / 30-day refresh} TTL}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ScrollBuddy}{Remote}
+      {Founder \& iOS Developer}{Aug 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Native iOS Integration}
+          {Built custom \textbf{Expo} native modules bridging iOS \textbf{Screen Time API} (DeviceActivity framework) with \textbf{Swift}, including \textbf{App Group} coordination between main app and shield extension}
+        \resumeItem{Offline-First Architecture}
+          {Designed offline-first architecture: \textbf{MMKV} encrypted storage, dual event queues (optimistic vs confirmed), idempotent background sync with exponential backoff, \textbf{14-layer provider} dependency hierarchy}
+        \resumeItem{App Store Shipping}
+          {Shipped to \textbf{App Store} with \textbf{RevenueCat} IAP (premium synced to Swift extensions), \textbf{Sentry} crash reporting, \textbf{Zod} validation, EAS pipeline. \textbf{2M+ organic views}, first paying user within 48 hours}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Sign Language Detection -- \$2.5K Hackathon Winner}
+      {Built coordinate-based NN using \textbf{Google MediaPipe} for hand landmark extraction with decentralized ML (Filecoin + Lilypad). \textbf{70\%} accuracy on ASL dataset. Encode Club Feb 2025.}
+    \resumeSubItem{thoughts2actions}
+      {Voice-to-structured-actions web app: audio $\rightarrow$ transcription $\rightarrow$ AI processing $\rightarrow$ searchable knowledge base. Built in 7 days (\textbf{Next.js} + Vercel).}
+    \resumeSubItem{Aviini Ltd (E-commerce)}
+      {Built eBay/Etsy API integrations with automated cron scheduling for revenue tracking; \textbf{\pounds25K profit} at 25-35\% margin over 18 months.}
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Languages}{TypeScript, Python, SQL, Swift (native modules)}
+   \resumeSubItem{Frontend}{React Native/Expo, Next.js/React, Zustand, React Query, Expo Router}
+   \resumeSubItem{Backend}{FastAPI, PostgreSQL, SQLAlchemy 2.0, Pydantic, Alembic, REST APIs}
+   \resumeSubItem{Cloud \& DevOps}{AWS (ECS Fargate, RDS, CloudFront, ALB), Docker, Terraform, CI/CD (GitHub Actions)}
+   \resumeSubItem{Tools}{Sentry, structlog, MMKV, RevenueCat, Auth0/OIDC, pgvector, PostGIS}
+ \resumeSubHeadingListEnd
+
+\end{document}

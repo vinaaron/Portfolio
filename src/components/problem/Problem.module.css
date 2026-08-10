@@ -498,6 +498,49 @@
   cursor: not-allowed;
 }
 
+/* ===== VOICE BUTTON ===== */
+.voiceBtn {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2d2d2d;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #888;
+}
+
+.voiceBtn:hover:not(:disabled) {
+  background: #3d3d3d;
+  color: #fff;
+}
+
+.voiceBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.voiceBtnActive {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: white;
+  animation: voicePulse 1s infinite;
+}
+
+@keyframes voicePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.chatInputRecording {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
 .aiLoading {
   display: flex;
   gap: 4px;
@@ -650,4 +693,378 @@
 
 .navLinkActive {
   color: var(--color-text);
+}
+
+/* ===== CONSOLE PANEL ===== */
+.consolePanel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.consoleTabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #333;
+  background: #252526;
+}
+
+.consoleTab {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 16px;
+  color: #808080;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.consoleTab:hover {
+  color: #e0e0e0;
+}
+
+.consoleTabActive {
+  color: #e0e0e0;
+}
+
+.consoleTabActive::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+.consoleContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 16px;
+}
+
+.testCaseSelector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.testCaseBtn {
+  font-family: var(--font-display);
+  font-size: 12px;
+  padding: 6px 12px;
+  background: #333;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #e0e0e0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.testCaseBtn:hover {
+  background: #3c3c3c;
+}
+
+.testCaseBtnActive {
+  background: #404040;
+  border-color: var(--color-accent);
+}
+
+.testCasePassed {
+  border-color: #4caf50;
+}
+
+.testCaseFailed {
+  border-color: #f44336;
+}
+
+.testCaseStatus {
+  font-size: 10px;
+}
+
+.testCaseInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.inputLabel {
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: #808080;
+}
+
+.inputValue {
+  font-family: var(--font-display);
+  font-size: 13px;
+  padding: 8px 12px;
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  color: #e0e0e0;
+  word-break: break-all;
+}
+
+.outputRunning {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #808080;
+  font-size: 14px;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #404040;
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.outputResults {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.outputStatus {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.outputStatusPassed {
+  background: rgba(76, 175, 80, 0.15);
+  color: #4caf50;
+}
+
+.outputStatusFailed {
+  background: rgba(244, 67, 54, 0.15);
+  color: #f44336;
+}
+
+.resultDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resultRow {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.resultLabel {
+  font-family: var(--font-display);
+  color: #808080;
+  min-width: 70px;
+}
+
+.resultValue {
+  font-family: var(--font-display);
+  color: #e0e0e0;
+  word-break: break-all;
+}
+
+.resultPassed {
+  color: #4caf50;
+}
+
+.resultFailed {
+  color: #f44336;
+}
+
+.stdoutSection,
+.stderrSection {
+  margin-top: 8px;
+}
+
+.stdoutLabel,
+.stderrLabel {
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: #808080;
+  margin-bottom: 4px;
+}
+
+.stdoutContent,
+.stderrContent {
+  font-family: var(--font-display);
+  font-size: 12px;
+  padding: 8px 12px;
+  background: #2d2d2d;
+  border-radius: 4px;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.stderrContent {
+  color: #f44336;
+}
+
+.outputEmpty {
+  color: #808080;
+  font-size: 14px;
+  text-align: center;
+  padding: 24px;
+}
+
+/* ===== STATUS HEADER (NeetCode style) ===== */
+.statusHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #333;
+}
+
+.statusType {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.statusAccepted {
+  color: #4caf50;
+}
+
+.statusError {
+  color: #f44336;
+}
+
+.statusWrong {
+  color: #f44336;
+}
+
+.passCount {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: #808080;
+}
+
+/* ===== DETAIL SECTIONS ===== */
+.testCaseDetails,
+.outputDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detailSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detailLabel {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: #808080;
+}
+
+.detailValue {
+  font-family: var(--font-display);
+  font-size: 13px;
+  padding: 10px 14px;
+  background: #2d2d2d;
+  border-radius: 6px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  word-break: break-all;
+}
+
+.outputCorrect {
+  color: #4caf50;
+}
+
+.outputWrong {
+  color: #f44336;
+}
+
+/* ===== ERROR BOX ===== */
+.errorBox {
+  font-family: var(--font-display);
+  font-size: 13px;
+  padding: 12px 14px;
+  background: rgba(244, 67, 54, 0.15);
+  border-radius: 6px;
+  color: #f44336;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ===== STDOUT BOX ===== */
+.stdoutBox {
+  font-family: var(--font-display);
+  font-size: 13px;
+  padding: 10px 14px;
+  background: #2d2d2d;
+  border-radius: 6px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+}
+
+/* ===== FEEDBACK SECTION ===== */
+.feedbackSection {
+  margin-top: 8px;
+  padding: 14px;
+  background: rgba(255, 217, 61, 0.08);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 8px 8px 0;
+}
+
+.feedbackLabel {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.feedbackLabel::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+.feedbackContent {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #e0e0e0;
+  line-height: 1.6;
 }

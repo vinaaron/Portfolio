@@ -26,12 +26,12 @@ export const experience: ExperienceEntry[] = [
   {
     id: "cogram-swe",
     company: "Cogram Technologies GmbH",
-    role: "Software Engineer",
+    role: "Product Engineer",
     type: "self-employed",
-    dateRange: "Mar 2026 - Present",
+    dateRange: "Feb 2026 - Present",
     location: "Remote",
     description:
-      "Building AI-powered meeting productivity tools as a contractor via Deel.",
+      "Product engineering for an AI platform serving enterprise AEC firms: shipped self-serve trial onboarding (sales-led to product-led), rearchitected the mobile meeting-upload pipeline to chunked resumable S3 uploads, and run interview-driven discovery to working v0s with a multi-agent workflow.",
     isCurrent: true,
   },
   {

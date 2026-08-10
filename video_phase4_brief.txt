@@ -1,0 +1,146 @@
+VIDEO #1 - PHASE 4 INFO
+========================
+
+Aaron's information for Phase 4 ("Current scenario — the apps
+didn't pop, but they got me to Cogram and gave me skills I'd
+never have had otherwise. The decision to not give up and to
+fix what I'm building instead").
+
+Raw information only. Editor to interpret and structure.
+
+
+KEY FACTS ABOUT COGRAM
+----------------------
+Role: Software Engineer contractor (via Deel)
+Start: March 2026
+Employer: Cogram Technologies GmbH (Berlin-based)
+Work: Building AI-powered meeting productivity tools
+Income: ~€6,100/month (~£60K/yr equivalent)
+Setup: Remote, full-time equivalent
+
+Notable: Aaron is by far the youngest on the team.
+Onboarding: Team offsite in Istanbul shortly after joining —
+Aaron's words: "probably the best onboarding any new entrant
+into a company could get."
+
+
+HOW COGRAM CAME ABOUT (his words)
+---------------------------------
+Context around leaving LINQ:
+"One of the biggest things here was there were some other
+things when leaving LINQ. I left from disputes with alignment
+and some core values as well — honesty policy, etc. So I am
+really proud of myself for leaving for the right reasons.
+There was potential of a Simon Squibb merger etc, things like
+that, but once again the monetary outcome didn't matter to
+me — it was the values that mattered."
+
+What Aaron did after:
+"After LINQ I was in a state where [I needed to] just return
+to the inputs. I cooked up a plan to go gym, start applying
+via different strategies — cold emails, different obscurer
+websites. I got into contact with YC founders, got on call
+with one, sent a lot of applications on LinkedIn too."
+
+Also credits his old university teaching assistant (wants to
+thank him separately — "I need to get into contact with him
+and thank him for the help as well").
+
+How Cogram actually happened:
+"Maybe Cogram was more lucky. One of the co-founders reached
+out to me on LinkedIn and in 1 week went through the whole
+hiring process. I was in the process of others too speaking
+to my old teaching assistant and everything."
+
+On why it worked:
+"Once again though it was a pleasant surprise that my
+experience was really valued because a lot of coding
+capability and output required the aid of an LLM tool.
+However, now that sort of experience is the most valuable.
+All the accomplishment and experiences I gained showcase a
+very different character. It showed that hard work really
+does pay off.
+
+Now that society has valued it that way, it's time to prove
+it my own way through ScrollBuddy or the personal brand."
+
+
+WHAT SPECIFICALLY GOT AARON THE JOB (his words)
+-----------------------------------------------
+"It was all the various projects. It was showing that I can
+build things from zero to hero, focusing on varied things —
+from distribution, to FE/BE development, to cloud deployment,
+to Web3, to ML. So many things whilst knowing the cores of
+most of them.
+
+I think it was the overall mentality and ability to utilise
+the LLM and guide them with the fundamental understanding of
+how to code as well as critically think."
+
+
+WHAT COGRAM IS LIKE (his words)
+-------------------------------
+"I do think Cogram is a great environment. I am by far the
+youngest entrant and my colleagues are very interesting
+characters themselves. They have youthful curiosity, child-
+like play in their ideas, and willingness to take on feedback
+and criticism."
+
+
+SKILLS GAINED THAT A NORMAL PATH WOULDN'T HAVE GIVEN (his words)
+----------------------------------------------------------------
+"The difference and breadth of the experiences ranging all
+the way from marketing and sales to development and more
+technical things.
+
+- Being able to concisely portray my thoughts
+- Staying calm in uncomfortable situations
+- Seeking uncomfortable situations in the pursuit of a better outcome
+- Being able to speak confidently and well"
+
+
+THE "DECIDED NOT TO GIVE UP" MOMENT (his words)
+-----------------------------------------------
+"I started journaling my thoughts once again. I think this
+is a corner piece which really does work — so many times
+that I have come back to the journal, it does work. It lets
+me come back to clarity of the future.
+
+The 'fix what I am doing' part came from aiming at virtue
+and value. I think great philosophers were wise enough to
+understand this ages ago, and only through all my previous
+failures is it allowing me to try this with my full heart
+involved."
+
+
+THE COUNTERFACTUAL (what a normal job would have looked like)
+-------------------------------------------------------------
+Aaron's words:
+"I would be depressed. I think unfortunately a normal role is
+antithetical to who I am with this constant growth mindset.
+
+It's a funny thing for an employee to have a growth mindset
+because if they truly had one, I think they would make to be
+an entrepreneur and would find themselves becoming one. This
+is a new thought.
+
+The first sentence I really do attest to — I am a
+fundamentally lazy person, and if I am not chasing my goals
+and ambitions, I break down into this blob that simply
+exists to chase dopamine — a shell of my true self."
+
+
+WHAT AARON IS CHANGING ABOUT SCROLLBUDDY (Phase 5 bridge)
+---------------------------------------------------------
+Aaron's words:
+"Big changes are:
+- to be more focused on what attracts people — the buddy aspect
+- taking away the premium gate
+- speaking to users
+- already fixing bugs which they have suggested
+- being much more on things."
+
+
+=====
+END
+=====

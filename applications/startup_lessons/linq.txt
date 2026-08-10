@@ -1,0 +1,11 @@
+Three mistakes, one lesson.
+
+Mistake 1: I was the only technical co-founder. In the age of AI-assisted development, people with agency are boosted more than ever. Having a non-technical team meant all engineering bottlenecked through me.
+
+Mistake 2: I joined largely because a partner was Simon Squibb, a large influencer. For a professional networking app, that seemed like a smart way to solve the chicken-and-egg problem. His actual involvement turned out to be minimal.
+
+Mistake 3: I didn't nail down co-founder obligations upfront, especially time commitments. I assumed alignment that wasn't there.
+
+I made the same mistake before with my first venture (ecommerce, £25K profit, 2 co-founders) where I was too focused on the people and not enough on the problem we were solving. LINQ repeated that pattern: I was blinded by the "Simon Squibb factor" and didn't think hard enough about the company, the problem, and the solution.
+
+The conclusion: a good co-founder is everything. I'm now looking for technical people who are action-oriented, and I'm working in startups specifically to find them.

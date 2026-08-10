@@ -1,3 +1,9 @@
+export interface TestCase {
+  id: string;
+  inputs: Record<string, unknown>;
+  expected: unknown;
+}
+
 export interface Problem {
   id: string;
   title: string;
@@ -11,6 +17,8 @@ export interface Problem {
   }[];
   constraints: string[];
   starterCode: string;
+  functionName: string;
+  testCases: TestCase[];
 }
 
 export const problems: Problem[] = [
@@ -40,7 +48,45 @@ You must write an algorithm that runs in <strong>O(n)</strong> time.`,
     starterCode: `class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         # Write your solution here
-        pass`
+        pass`,
+    functionName: 'longestConsecutive',
+    testCases: [
+      {
+        id: 'case1',
+        inputs: { nums: [100, 4, 200, 1, 3, 2] },
+        expected: 4
+      },
+      {
+        id: 'case2',
+        inputs: { nums: [0, 3, 7, 2, 5, 8, 4, 6, 0, 1] },
+        expected: 9
+      },
+      {
+        id: 'case3',
+        inputs: { nums: [] },
+        expected: 0
+      },
+      {
+        id: 'case4',
+        inputs: { nums: [1] },
+        expected: 1
+      },
+      {
+        id: 'case5',
+        inputs: { nums: [5, 5, 5, 5] },
+        expected: 1
+      },
+      {
+        id: 'case6',
+        inputs: { nums: [-3, -2, -1, 0, 1] },
+        expected: 5
+      },
+      {
+        id: 'case7',
+        inputs: { nums: [9, 1, 4, 7, 3, -1, 0, 5, 8, -1, 6] },
+        expected: 7
+      }
+    ]
   },
   {
     id: 'two-sum',
@@ -76,7 +122,40 @@ You can return the answer in any order.`,
     starterCode: `class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         # Write your solution here
-        pass`
+        pass`,
+    functionName: 'twoSum',
+    testCases: [
+      {
+        id: 'case1',
+        inputs: { nums: [2, 7, 11, 15], target: 9 },
+        expected: [0, 1]
+      },
+      {
+        id: 'case2',
+        inputs: { nums: [3, 2, 4], target: 6 },
+        expected: [1, 2]
+      },
+      {
+        id: 'case3',
+        inputs: { nums: [3, 3], target: 6 },
+        expected: [0, 1]
+      },
+      {
+        id: 'case4',
+        inputs: { nums: [-1, -2, -3, -4, -5], target: -8 },
+        expected: [2, 4]
+      },
+      {
+        id: 'case5',
+        inputs: { nums: [0, 4, 3, 0], target: 0 },
+        expected: [0, 3]
+      },
+      {
+        id: 'case6',
+        inputs: { nums: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], target: 19 },
+        expected: [8, 9]
+      }
+    ]
   },
   {
     id: 'valid-sudoku',
@@ -133,7 +212,95 @@ You can return the answer in any order.`,
     starterCode: `class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         # Write your solution here
-        pass`
+        pass`,
+    functionName: 'isValidSudoku',
+    testCases: [
+      {
+        id: 'case1',
+        inputs: {
+          board: [
+            ["5","3",".",".","7",".",".",".","."],
+            ["6",".",".","1","9","5",".",".","."],
+            [".","9","8",".",".",".",".","6","."],
+            ["8",".",".",".","6",".",".",".","3"],
+            ["4",".",".","8",".","3",".",".","1"],
+            ["7",".",".",".","2",".",".",".","6"],
+            [".","6",".",".",".",".","2","8","."],
+            [".",".",".","4","1","9",".",".","5"],
+            [".",".",".",".","8",".",".","7","9"]
+          ]
+        },
+        expected: true
+      },
+      {
+        id: 'case2',
+        inputs: {
+          board: [
+            ["8","3",".",".","7",".",".",".","."],
+            ["6",".",".","1","9","5",".",".","."],
+            [".","9","8",".",".",".",".","6","."],
+            ["8",".",".",".","6",".",".",".","3"],
+            ["4",".",".","8",".","3",".",".","1"],
+            ["7",".",".",".","2",".",".",".","6"],
+            [".","6",".",".",".",".","2","8","."],
+            [".",".",".","4","1","9",".",".","5"],
+            [".",".",".",".","8",".",".","7","9"]
+          ]
+        },
+        expected: false
+      },
+      {
+        id: 'case3',
+        inputs: {
+          board: [
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."]
+          ]
+        },
+        expected: true
+      },
+      {
+        id: 'case4',
+        inputs: {
+          board: [
+            ["1","2",".",".",".",".",".",".","3"],
+            ["4",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            [".",".",".",".",".",".",".",".","."],
+            ["1",".",".",".",".",".",".",".","."]
+          ]
+        },
+        expected: false
+      },
+      {
+        id: 'case5',
+        inputs: {
+          board: [
+            ["5","3",".",".","7",".",".",".","."],
+            ["6",".",".","1","9","5",".",".","."],
+            [".","9","8",".",".",".",".","6","."],
+            ["8",".",".",".","6",".",".",".","3"],
+            ["4",".",".","8",".","3",".",".","1"],
+            ["7",".",".",".","2",".",".",".","6"],
+            [".","6",".",".",".",".","2","8","."],
+            [".",".",".","4","1","9",".",".","5"],
+            [".",".",".",".",".",".",".","7","9"]
+          ]
+        },
+        expected: true
+      }
+    ]
   }
 ];
 

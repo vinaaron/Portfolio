@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeInterview - AI-Powered Interview Prep</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #FFFBF0;
+      --color-bg-alt: #FFF9E6;
+      --color-text: #1A1A1A;
+      --color-text-muted: #666666;
+      --color-text-light: #999999;
+      --color-accent: #FFD93D;
+      --color-accent-hover: #FFCA00;
+      --color-accent-light: #FFF3B0;
+      --color-border: #E5E5E5;
+      --color-editor: #1e1e1e;
+      --color-editor-line: #2d2d2d;
+      --font-display: 'Space Mono', monospace;
+      --font-body: 'Inter', sans-serif;
+      --font-code: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--color-bg);
+      color: var(--color-text);
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 56px;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-border);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--color-accent);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover {
+      color: var(--color-text);
+    }
+
+    .nav-link.active {
+      color: var(--color-text);
+    }
+
+    .btn-signin {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 20px;
+      background: var(--color-accent);
+      color: var(--color-text);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-signin:hover {
+      background: var(--color-accent-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ===== MAIN LAYOUT ===== */
+    .main-container {
+      display: flex;
+      height: calc(100vh - 56px);
+      margin-top: 56px;
+    }
+
+    /* ===== PROBLEM PANEL (LEFT) ===== */
+    .problem-panel {
+      width: 40%;
+      min-width: 400px;
+      background: var(--color-bg);
+      border-right: 1px solid var(--color-border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .problem-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 20px;
+      border-bottom: 1px solid var(--color-border);
+      background: var(--color-bg-alt);
+    }
+
+    .problem-tab {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 14px 16px;
+      color: var(--color-text-muted);
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.2s;
+    }
+
+    .problem-tab:hover {
+      color: var(--color-text);
+    }
+
+    .problem-tab.active {
+      color: var(--color-text);
+    }
+
+    .problem-tab.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+      right: 16px;
+      height: 2px;
+      background: var(--color-accent);
+      border-radius: 2px 2px 0 0;
+    }
+
+    .problem-content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px;
+    }
+
+    .problem-header {
+      margin-bottom: 20px;
+    }
+
+    .problem-number {
+      font-family: var(--font-display);
+      font-size: 12px;
+      color: var(--color-text-light);
+      margin-bottom: 4px;
+    }
+
+    .problem-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 12px;
+    }
+
+    .problem-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .difficulty-badge {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: #FFF3B0;
+      color: #B8860B;
+    }
+
+    .difficulty-badge.medium {
+      background: #FFF3B0;
+      color: #B8860B;
+    }
+
+    .tag {
+      font-size: 12px;
+      color: var(--color-text-muted);
+      padding: 4px 10px;
+      background: var(--color-bg-alt);
+      border-radius: 4px;
+    }
+
+    .problem-description {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--color-text);
+      margin-bottom: 24px;
+    }
+
+    .problem-description p {
+      margin-bottom: 16px;
+    }
+
+    .example {
+      background: var(--color-bg-alt);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .example-label {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 12px;
+    }
+
+    .example-content {
+      font-family: var(--font-code);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .example-content .label {
+      color: var(--color-text-muted);
+    }
+
+    .example-content .value {
+      color: var(--color-text);
+    }
+
+    .example-explanation {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--color-border);
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--color-text-muted);
+    }
+
+    .constraints {
+      margin-top: 24px;
+    }
+
+    .constraints-title {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .constraints-list {
+      font-family: var(--font-code);
+      font-size: 13px;
+      color: var(--color-text-muted);
+    }
+
+    .constraints-list li {
+      margin-bottom: 6px;
+      margin-left: 20px;
+    }
+
+    /* ===== EDITOR PANEL (RIGHT) ===== */
+    .editor-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: var(--color-bg);
+      overflow: hidden;
+    }
+
+    .editor-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+      background: var(--color-bg-alt);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .language-select {
+      font-family: var(--font-code);
+      font-size: 13px;
+      padding: 6px 12px;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      color: var(--color-text);
+      cursor: pointer;
+    }
+
+    .editor-actions-top {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--color-text-muted);
+      transition: all 0.2s;
+    }
+
+    .btn-icon:hover {
+      border-color: var(--color-accent);
+      color: var(--color-text);
+    }
+
+    /* ===== CODE EDITOR ===== */
+    .code-editor {
+      flex: 1;
+      background: var(--color-editor);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .code-lines {
+      display: flex;
+      height: 100%;
+    }
+
+    .line-numbers {
+      padding: 16px 0;
+      background: #252526;
+      color: #6e7681;
+      font-family: var(--font-code);
+      font-size: 13px;
+      line-height: 1.6;
+      text-align: right;
+      user-select: none;
+      min-width: 50px;
+    }
+
+    .line-numbers span {
+      display: block;
+      padding: 0 16px;
+    }
+
+    .code-content {
+      flex: 1;
+      padding: 16px;
+      overflow: auto;
+      font-family: var(--font-code);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .code-content pre {
+      margin: 0;
+      color: #d4d4d4;
+    }
+
+    /* Syntax highlighting */
+    .keyword { color: #569cd6; }
+    .function { color: #dcdcaa; }
+    .class-name { color: #4ec9b0; }
+    .string { color: #ce9178; }
+    .number { color: #b5cea8; }
+    .comment { color: #6a9955; }
+    .parameter { color: #9cdcfe; }
+    .type { color: #4ec9b0; }
+    .operator { color: #d4d4d4; }
+    .punctuation { color: #d4d4d4; }
+
+    /* ===== AI INTERVIEWER PANEL ===== */
+    .ai-panel {
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+      padding: 16px;
+    }
+
+    .ai-panel-inner {
+      background: var(--color-bg-alt);
+      border-left: 3px solid var(--color-accent);
+      border-radius: 0 8px 8px 0;
+      padding: 16px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .ai-avatar {
+      width: 36px;
+      height: 36px;
+      background: var(--color-accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .ai-avatar svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .ai-content {
+      flex: 1;
+    }
+
+    .ai-label {
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .ai-badge {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 6px;
+      background: var(--color-accent);
+      border-radius: 4px;
+      font-family: var(--font-body);
+    }
+
+    .ai-message {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--color-text);
+    }
+
+    .ai-message p {
+      margin-bottom: 8px;
+    }
+
+    .ai-message p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== BOTTOM ACTIONS ===== */
+    .editor-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      background: var(--color-bg-alt);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .console-toggle {
+      font-family: var(--font-code);
+      font-size: 13px;
+      color: var(--color-text-muted);
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .console-toggle:hover {
+      color: var(--color-text);
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-secondary {
+      background: var(--color-bg);
+      color: var(--color-text);
+      border: 1px solid var(--color-border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--color-text-muted);
+    }
+
+    .btn-primary {
+      background: var(--color-accent);
+      color: var(--color-text);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--color-accent-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(255, 217, 61, 0.3);
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .problem-content {
+      animation: fadeIn 0.4s ease;
+    }
+
+    .ai-panel-inner {
+      animation: fadeIn 0.4s ease 0.2s both;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .problem-panel {
+        width: 45%;
+        min-width: 300px;
+      }
+    }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-border);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-text-light);
+    }
+
+    .code-editor::-webkit-scrollbar-thumb {
+      background: #404040;
+    }
+
+    .code-editor::-webkit-scrollbar-track {
+      background: var(--color-editor);
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-icon">CI</div>
+      CodeInterview
+    </div>
+    <div class="nav-links">
+      <a href="#" class="nav-link active">Problems</a>
+      <a href="#" class="nav-link">Progress</a>
+      <a href="#" class="nav-link">Patterns</a>
+    </div>
+    <button class="btn-signin">Sign In</button>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <div class="main-container">
+    <!-- PROBLEM PANEL -->
+    <div class="problem-panel">
+      <div class="problem-tabs">
+        <button class="problem-tab active">Description</button>
+        <button class="problem-tab">Solutions</button>
+        <button class="problem-tab">Submissions</button>
+      </div>
+      <div class="problem-content">
+        <div class="problem-header">
+          <div class="problem-number">Problem #128</div>
+          <h1 class="problem-title">Longest Consecutive Sequence</h1>
+          <div class="problem-meta">
+            <span class="difficulty-badge medium">Medium</span>
+            <span class="tag">Arrays</span>
+            <span class="tag">Hash Table</span>
+          </div>
+        </div>
+
+        <div class="problem-description">
+          <p>Given an unsorted array of integers <code>nums</code>, return the length of the longest consecutive elements sequence.</p>
+          <p>You must write an algorithm that runs in <strong>O(n)</strong> time.</p>
+        </div>
+
+        <div class="example">
+          <div class="example-label">Example 1:</div>
+          <div class="example-content">
+            <div><span class="label">Input:</span> <span class="value">nums = [100, 4, 200, 1, 3, 2]</span></div>
+            <div><span class="label">Output:</span> <span class="value">4</span></div>
+          </div>
+          <div class="example-explanation">
+            Explanation: The longest consecutive sequence is [1, 2, 3, 4]. Therefore its length is 4.
+          </div>
+        </div>
+
+        <div class="example">
+          <div class="example-label">Example 2:</div>
+          <div class="example-content">
+            <div><span class="label">Input:</span> <span class="value">nums = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1]</span></div>
+            <div><span class="label">Output:</span> <span class="value">9</span></div>
+          </div>
+        </div>
+
+        <div class="constraints">
+          <div class="constraints-title">Constraints:</div>
+          <ul class="constraints-list">
+            <li>0 ≤ nums.length ≤ 10⁵</li>
+            <li>-10⁹ ≤ nums[i] ≤ 10⁹</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDITOR PANEL -->
+    <div class="editor-panel">
+      <div class="editor-header">
+        <select class="language-select">
+          <option>Python 3</option>
+          <option>JavaScript</option>
+          <option>TypeScript</option>
+          <option>Java</option>
+        </select>
+        <div class="editor-actions-top">
+          <button class="btn-icon" title="Reset code">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+              <path d="M3 3v5h5"/>
+            </svg>
+          </button>
+          <button class="btn-icon" title="Settings">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- CODE EDITOR -->
+      <div class="code-editor">
+        <div class="code-lines">
+          <div class="line-numbers">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+            <span>13</span>
+            <span>14</span>
+            <span>15</span>
+            <span>16</span>
+            <span>17</span>
+            <span>18</span>
+          </div>
+          <div class="code-content">
+            <pre><span class="keyword">class</span> <span class="class-name">Solution</span><span class="punctuation">:</span>
+    <span class="keyword">def</span> <span class="function">longestConsecutive</span><span class="punctuation">(</span><span class="parameter">self</span><span class="punctuation">,</span> <span class="parameter">nums</span><span class="punctuation">:</span> <span class="type">List</span><span class="punctuation">[</span><span class="type">int</span><span class="punctuation">]</span><span class="punctuation">)</span> <span class="operator">-></span> <span class="type">int</span><span class="punctuation">:</span>
+        <span class="parameter">num_set</span> <span class="operator">=</span> <span class="function">set</span><span class="punctuation">(</span><span class="parameter">nums</span><span class="punctuation">)</span>
+        <span class="parameter">longest</span> <span class="operator">=</span> <span class="number">0</span>
+
+        <span class="keyword">for</span> <span class="parameter">num</span> <span class="keyword">in</span> <span class="parameter">num_set</span><span class="punctuation">:</span>
+            <span class="comment"># Only start if this is the beginning of a sequence</span>
+            <span class="keyword">if</span> <span class="parameter">num</span> <span class="operator">-</span> <span class="number">1</span> <span class="keyword">not</span> <span class="keyword">in</span> <span class="parameter">num_set</span><span class="punctuation">:</span>
+                <span class="parameter">current_num</span> <span class="operator">=</span> <span class="parameter">num</span>
+                <span class="parameter">streak</span> <span class="operator">=</span> <span class="number">1</span>
+
+                <span class="keyword">while</span> <span class="parameter">current_num</span> <span class="operator">+</span> <span class="number">1</span> <span class="keyword">in</span> <span class="parameter">num_set</span><span class="punctuation">:</span>
+                    <span class="parameter">current_num</span> <span class="operator">+=</span> <span class="number">1</span>
+                    <span class="parameter">streak</span> <span class="operator">+=</span> <span class="number">1</span>
+
+                <span class="parameter">longest</span> <span class="operator">=</span> <span class="function">max</span><span class="punctuation">(</span><span class="parameter">longest</span><span class="punctuation">,</span> <span class="parameter">streak</span><span class="punctuation">)</span>
+
+        <span class="keyword">return</span> <span class="parameter">longest</span></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI INTERVIEWER PANEL -->
+      <div class="ai-panel">
+        <div class="ai-panel-inner">
+          <div class="ai-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+              <path d="M12 16v-4"/>
+              <path d="M12 8h.01"/>
+            </svg>
+          </div>
+          <div class="ai-content">
+            <div class="ai-label">
+              AI Interviewer
+              <span class="ai-badge">LIVE</span>
+            </div>
+            <div class="ai-message">
+              <p>Good solution! I have a few follow-up questions:</p>
+              <p><strong>1.</strong> What's the time complexity of your solution? Can you walk me through why?</p>
+              <p><strong>2.</strong> What would happen if the input array contained duplicates?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER ACTIONS -->
+      <div class="editor-footer">
+        <button class="console-toggle">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="4 17 10 11 4 5"/>
+            <line x1="12" y1="19" x2="20" y2="19"/>
+          </svg>
+          Console
+        </button>
+        <div class="action-buttons">
+          <button class="btn btn-secondary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            Run
+          </button>
+          <button class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2L11 13"/>
+              <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+            </svg>
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

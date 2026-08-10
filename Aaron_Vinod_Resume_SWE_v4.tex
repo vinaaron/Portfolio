@@ -1,0 +1,158 @@
+%-------------------------
+% Resume in Latex - SWE v4 (1 Page Optimized)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Aaron Vinod}} & Email: \href{mailto:aaronvinod25@gmail.com}{aaronvinod25@gmail.com}\\
+  Cambridge, UK & Mobile: +44 7476 904065 \\
+  \href{https://github.com/ce20480}{GitHub: github.com/ce20480} & \href{https://linkedin.com/in/aaron-vinod-a80016243}{LinkedIn: aaron-vinod-a80016243}\\
+  \href{https://portfolio-zeta-ecru-53.vercel.app/}{Portfolio: portfolio-zeta-ecru-53.vercel.app} & \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Bristol}{Bristol, UK}
+      {MEng Engineering Mathematics, First Class Honours}{Sep 2020 -- Jun 2024}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Specialization:} Machine Learning \& Neural Networks}}}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LINQ}{Remote}
+      {CTO \& Technical Co-founder}{Sep 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Infrastructure}
+          {Designed AWS architecture with auto-scaling: CloudFront $\rightarrow$ ALB $\rightarrow$ ECS Fargate $\rightarrow$ RDS PostgreSQL}
+        \resumeItem{Security}
+          {Implemented CloudFront origin validation, Security Groups restricting traffic to ALB, authenticated endpoints}
+        \resumeItem{Full-Stack}
+          {Built cross-platform mobile app (React Native/Expo) + FastAPI backend for 4-person founding team}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ScrollBuddy}{Remote}
+      {Founder \& iOS Developer}{Aug 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Shipping}
+          {Built and shipped anti-doomscrolling iOS app to App Store using React Native/Expo}
+        \resumeItem{Growth}
+          {Generated 2M+ organic TikTok views; first paying user within 48 hours of launch}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {thoughts2actions}{Remote}
+      {Founder}{Jan 2025}
+      \resumeItemListStart
+        \resumeItem{Rapid Development}
+          {Built voice-to-structured-actions web app in 7 days from concept to production}
+        \resumeItem{Pipeline}
+          {Implemented audio $\rightarrow$ transcription $\rightarrow$ AI processing $\rightarrow$ searchable knowledge base (Next.js + Vercel)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Aviini Ltd}{Remote}
+      {Founder}{Jul 2023 -- Jan 2025}
+      \resumeItemListStart
+        \resumeItem{E-commerce}
+          {Built eBay/Etsy API integrations for automated revenue and order tracking; \pounds25K profit at 25-35\% margin}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MyGreenDoor}{Bristol, UK}
+      {ML Engineer (Part-time)}{Jan 2023 -- Jun 2023}
+      \resumeItemListStart
+        \resumeItem{ML Pipeline}
+          {Built k-NN clustering pipeline for property retrofit recommendations (Python, pandas, scikit-learn)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Sign Language Detection -- \$2.5K Hackathon Winner}
+      {Built CNN for ASL detection (70\% accuracy) with decentralized ML (Filecoin + Lilypad). Encode Club Feb 2025.}
+    \resumeSubItem{Decision-Making via Random Walks -- MEng Thesis}
+      {Applied stochastic process theory to model sequential decision-making under uncertainty.}
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Languages}{TypeScript, Python, SQL}
+   \resumeSubItem{Frameworks}{React Native/Expo, Next.js/React, FastAPI, Node.js}
+   \resumeSubItem{Platforms}{AWS (ECS Fargate, RDS, CloudFront, ALB, Security Groups), Vercel, Docker}
+   \resumeSubItem{ML}{Vector embeddings, LLM integration (Groq, Gemini)}
+ \resumeSubHeadingListEnd
+
+\end{document}

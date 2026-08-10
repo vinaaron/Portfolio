@@ -1,0 +1,193 @@
+VIDEO #1 - PHASE 2 INFO
+========================
+
+Aaron's information for Phase 2 ("Everything built before ScrollBuddy
+and Cogram, plus the start of content creation").
+Raw information only. Editor to interpret and structure.
+
+
+MYGREENDOOR (Jan - Jun 2023)
+----------------------------
+Role: ML Engineer, part-time internship via university
+Context: Came BEFORE Aviini. Pre-entrepreneurship.
+
+Aaron's words:
+"I knew I wanted to pursue a course so I knew I needed capital
+so I applied for a part-time internship via my university and
+I got this opportunity which gave me the revenue to pursue the
+course that started Aviini."
+
+Significance: This is how Aaron funded the £1,500 dropshipping
+course that kicked off Aviini.
+
+
+AVIINI - THE MIDDLE + THE END (Jul 2023 - Jan 2025)
+---------------------------------------------------
+(Phase 1 covers the start. This is what happened during and how it ended.)
+
+The breakthrough product: Pokémon keychains
+
+Aaron's words:
+"We followed the course and had a task to find out 30 products
+for different niches and funnily enough that intro task was
+about the only useful thing on the course because we found one
+product on there which I was like to my mate Avi 'lets put this
+on Etsy.' My mate was the one who was like we should try Etsy
+long before we got the course actually. However, this product —
+Pokémon keychains — was what began our journey to hit 6 figures
+in revenue for e-commerce."
+
+The day-to-day:
+"As monotonous as you would imagine. Go on AliExpress, research
+products, find them, put them onto each store, repeat. Get
+orders, put in customer details, order directly to them, track
+the revenue, repeat. Very mundane but that is the process to
+scale simple businesses like that. To be honest all businesses
+have their mundane got-to-be-done tasks."
+
+Product pivots:
+Pokémon keychains → home decor (ceiling lamps, table lamps) → clothing
+
+How it ended:
+"After pivoting from different products from home decor like
+ceiling lamps and table lamps to clothing, we were hit with IP
+related concerns because we were selling artist-related clothing.
+It came to the point where we even got fake sued. That led us
+to stop pursuing ecom."
+
+The lesson:
+"This was the best decision for us because it was like a slap
+on the wrist from the man above. We didn't receive punishment
+and we stopped this quick money, only monetary focused business
+which had no tangential benefit to reality. We were purely
+allowing consumerism, adding no value to the society we were
+in. That is the lesson which is finally making more and more
+sense to me — chase impact, chase value, chase virtue, not
+useless monetary outcomes."
+
+
+THOUGHTS2ACTIONS (Jan 2025)
+---------------------------
+The problem it solved:
+"You know that feeling when you feel like you've forgotten
+something — an idea, a problem, a potential solution. With
+thoughts2actions that will no longer happen. When that new
+idea pops in your head just quickly record it, let AI
+transcribe and synthesize it for you to come back to later."
+
+Context: Built in 7 days. Built during the "12 in 12" phase
+(12 startups in 12 months).
+
+Launch:
+"I launched it on various platforms. My LinkedIn, which was
+cool — first time sort of revealing my entrepreneurial nature
+to my friends from school and uni."
+
+What went wrong (his words):
+"It was always this stunt for me. I was cloudy on the vision
+and after I stopped the fun part — building it — I immediately
+ran away from the product during the potential hard part of
+distributing it. It was too rushed and I didn't really have
+any understanding of the problem space and quit before I
+even really started."
+
+
+SIGN LANGUAGE DETECTION — HACKATHON (Feb 2025)
+----------------------------------------------
+Aaron frames this as "a side quest."
+
+The problem it solved:
+"A sign language detection model via Web3 technologies which
+could be used to decentralised store new training data and
+help improve the underlying model. Users could come to the
+site, create ASL training data — it gets stored decentralised
+and then can be used for retraining the model."
+
+Result: Won $2,500
+
+Honest caveats Aaron wants to share:
+"I did have a slight advantage because my potential partner
+was a part of the organisers, but she was too scared to fully
+be a part of my team so she did drop out haha. I do think
+majority of the work I would like to take credit for. TBH it
+was mostly Cursor and GPT at the time but the ideation was me."
+
+What it felt like:
+"Winning the 2.5K was cool — it was validation that I am
+capable of cool things. Apparently it is not common to win
+your first hackathon."
+
+The lesson:
+"The lesson there is always try. At the beginning I went in
+for the monetary target TBH, but I got to learn about cool
+technologies like Filecoin, Akave, Storacha, Lilypad. Things
+I would have never known about, and I got to showcase a
+great thing that built up my experiences."
+
+
+LINQ (Sep 2025 - Jan 2026)
+--------------------------
+Role: CTO
+
+The problem it solved:
+"An app where you can be matched with the ideal person to
+network with. Then it became the place creators can network
+with each other. Imagine a Tinder-esque swiping system for
+networking — that was LINQ."
+
+Why Aaron left:
+"Unfortunately, the team and I were not aligned and that led
+me to part ways. I felt I was not being fairly compensated
+for my hard work via the equity because I was not getting
+comp outside of that. I was putting in the most effort and
+work and was compensated less."
+
+The lesson (on co-founders):
+"I have learnt a lot over the years about potential
+co-founders and I think I will be asking a lot more about
+them before I ever enter a new one because it's like a
+marriage — it can be one of the most important people in
+your life. Smart, honest and hard working — a tough combo.
+I think the biggest lesson from that was co-founders and
+making sure you understand all the nuances going into a big
+relationship like that and who the people are. If they treat
+contracts as king, think more carefully."
+
+What LINQ did give him:
+"I was able to do a ton of cloud deployment for LINQ and it
+showed me how powerful Claude and these tools already are at
+it, so it has demystified a lot of that realm for me which
+is great."
+
+
+CONTENT CREATION JOURNEY (the parallel strand)
+----------------------------------------------
+Timeline of Aaron's content formats:
+
+Long-form weekly vlogs → pauses → live streams → short-form
+→ paused after leaving LINQ → (planning the return now)
+
+Aaron's words:
+"Live streaming came for the 12-in-12 phase specifically
+around thoughts2actions because I was so busy building that.
+TikTok and short form was more started once I was having to
+properly distribute ScrollBuddy and be concerned with that.
+
+I started with long form weekly vlogs, then took pauses, did
+livestreams, then short form more during last few months.
+Paused after leaving LINQ. Now planning the return with long
+form being the core and short form being clips from the long
+form."
+
+
+FULL-CIRCLE MOMENT (worth mentioning)
+-------------------------------------
+Aaron's words:
+"Funny enough, Kharel, my editor, is a long-term viewer and
+one of the viewers of the live stream. So funny to come full
+circle and be a part of the process now."
+
+
+=====
+END
+=====

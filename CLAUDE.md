@@ -1,6 +1,6 @@
-# Aaron Vinod - Portfolio Context
+# Aaron Vinod - Portfolio & Career Context
 
-This file preserves important context for Claude Code sessions working on this portfolio.
+This file preserves important context for Claude Code sessions working on this portfolio and career strategy.
 
 ---
 
@@ -8,7 +8,8 @@ This file preserves important context for Claude Code sessions working on this p
 
 **Education:** MEng Engineering Mathematics, First Class - University of Bristol (2024)
 **Location:** Cambridge, UK
-**Current Role:** CTO & Technical Co-founder at LINQ (Sep 2025 - Present)
+**Status (Feb 2026):** Left LINQ. Now full-time job seeking (MLE preferred, SWE open) + building ScrollBuddy + personal brand.
+**Previous Role:** CTO & Technical Co-founder at LINQ (Sep 2025 - ~Jan 2026)
 
 ### Personality & Quirks
 - Badminton lover (discovered at uni during COVID, dad played too)
@@ -30,27 +31,50 @@ This file preserves important context for Claude Code sessions working on this p
 
 ## Projects & Technical Experience
 
-### LINQ (CTO, Sep 2025 - Present)
+### LINQ (CTO, Sep 2025 - ~Jan 2026) — LEFT
 AI-powered professional networking platform, partnered with Simon Squibb. Team of 4 (solo technical founder).
-
 **Infrastructure:**
 - AWS: CloudFront → ALB → ECS Fargate (auto-scaling) → RDS PostgreSQL
-- CI/CD: GitHub Actions → ECR → ECS
-- Security: CloudFront origin validation, Security Groups restricting traffic to ALB, authenticated endpoints
+- CI/CD: GitHub Actions → ECR → ECS, Terraform IaC
+- Security: CloudFront origin validation, Security Groups, OIDC auth to AWS (no long-lived credentials)
+- Monitoring: Sentry + CloudWatch + structlog
+
+**Database & API (SWE depth):**
+- PostgreSQL: 20+ tables, 70 Alembic migrations, pgvector HNSW indexes, PostGIS geo-indexes
+- FastAPI: async, repository pattern, dependency injection, Pydantic validation, rate limiting (slowapi)
+- Multi-provider OIDC auth interface (Auth0, Keycloak, Cognito, Clerk)
+- JWT-based RBAC, 5h access / 30-day refresh TTL
+
+**Mobile (SWE depth):**
+- React Native: Zustand (client) + React Query (server) + MMKV (encrypted persistence)
+- Auth0 JWT with automatic token refresh, Axios interceptors (401 queue, 429 backoff)
+- 1,035+ TypeScript files, 50+ service modules
 
 **ML/AI:**
-- Gemini embeddings (752D), achieving 80-90% match accuracy
-- Chose Gemini over OpenAI for cost efficiency
-- Groq LLM re-ranking for fast inference (<5s latency)
-- Benchmarked embedding models on synthetic data, evaluated score distribution variance (0.6-0.8 range)
+- Gemini embeddings (752D), 80-90% match accuracy, chose over OpenAI for cost
+- Groq LLM re-ranking (<5s latency)
+- Benchmarked embedding models on synthetic data, score distribution variance (0.6-0.8)
 
-**Stack:** React Native + FastAPI + PostgreSQL, React Query for caching
+**Stack:** React Native/Expo + FastAPI + PostgreSQL + AWS
+**Codebase:** `/Users/avini/Documents/LINQ/LINQ-code/`
 
 ### ScrollBuddy (Founder, Aug 2025 - Present)
 Anti-doomscrolling iOS app shipped to App Store.
 - 2M+ organic TikTok views through content-led growth
 - First paying user within 48 hours
-- Stack: React Native/Expo
+
+**SWE depth (from codebase):**
+- Custom Expo native modules bridging iOS Screen Time API (DeviceActivity framework) with Swift
+- App Group coordination between main app and shield extension
+- MMKV encrypted storage, dual event queues (optimistic vs confirmed usage)
+- 14-layer provider dependency hierarchy
+- RevenueCat in-app purchases, premium status synced to Swift extensions via UserDefaults
+- Background sync: exponential backoff, idempotency, 30s rate limiting
+- Sentry + structured logging, Zod runtime validation
+- Deep linking with auth-gated intent storage
+
+**Stack:** React Native/Expo + Supabase
+**Codebase:** `/Users/avini/Documents/GitHub/doomscrollr`
 
 ### Encode Club Hackathon ($2.5K Winner, Feb 2025)
 Sign language detection system.
@@ -136,20 +160,114 @@ Property retrofit recommendations for UK sustainability initiative.
 
 ---
 
-## Resume/CV Context
+## Resume/CV Status
 
-### Target Companies
-Mid-size UK tech: Monzo, Revolut, Wise, Deliveroo, Checkout.com, Starling Bank, GoCardless, Paddle
+- **SWE v6**: `Aaron_Vinod_Resume_SWE_v6.tex` — engineering-depth rewrite, ATS-optimized (replaces v5)
+- **MLE v5**: `Aaron_Vinod_Resume_MLE_v5.tex` — completed, ATS-optimized, LINQ dates fixed
+- **LinkedIn**: Updated with detailed experience entries (Feb 2026)
+- **Plan file**: Outreach schedule + CV strategy at `/Users/avini/.claude/plans/drifting-whistling-oasis.md`
 
-### Key Skills
-**Languages:** TypeScript, Python, SQL
-**Frontend:** React Native/Expo, Next.js/React
-**Backend:** FastAPI, Node.js, PostgreSQL, REST APIs
-**Cloud & DevOps:** AWS (ECS Fargate, RDS, CloudFront, ALB), Docker, CI/CD (GitHub Actions), Vercel
+### Key Lesson: Engineer vs Founder Language
+SWE v5 read like a founder pitch deck. v6 rewrites every bullet to show HOW (architecture, patterns, trade-offs) not just WHAT was shipped. Example:
+- Bad: "Built cross-platform mobile app (React Native/Expo) + FastAPI REST API + PostgreSQL"
+- Good: "Designed PostgreSQL schema (20+ tables, 70 Alembic migrations) with pgvector HNSW indexes for vector similarity, PostGIS geo-indexes for distance ranking"
+
+### Key Skills (for ATS)
+**Languages:** TypeScript, Python, SQL, Swift (native modules)
+**Frontend:** React Native/Expo, Next.js/React, Zustand, React Query, Expo Router
+**Backend:** FastAPI, PostgreSQL, SQLAlchemy 2.0, Pydantic, Alembic, REST APIs
+**Cloud & DevOps:** AWS (ECS Fargate, RDS, CloudFront, ALB), Docker, Terraform, CI/CD (GitHub Actions)
+**Tools:** Sentry, structlog, MMKV, RevenueCat, Auth0/OIDC, pgvector, PostGIS
 **ML:** Vector embeddings, LLM integration (Groq, Gemini), scikit-learn, PyTorch, RAG, Computer Vision (MediaPipe)
 
-### ATS Keywords to Include
-CI/CD, GitHub Actions, Docker, REST APIs, PostgreSQL, RAG, Computer Vision, MediaPipe, Feature Engineering, Model Evaluation, Microservices
+---
+
+## Job Search Strategy
+
+### Target Companies (Expanded)
+
+**London Fintech (all actively hiring ML, 2026):**
+| Company | ML Focus | Salary |
+|---------|----------|--------|
+| Monzo | Fraud detection, personalization | £95-130K + stock |
+| Revolut | FinCrime, Growth, RAG assistants | Competitive + equity |
+| Wise | ML Platform team | Competitive |
+| GoCardless | Payment intelligence, fraud | £82-103K + equity |
+| Deliveroo | Recommendations, logistics | Competitive |
+| Starling Bank | Data & ML Engineering | Competitive |
+| Thought Machine | Cloud banking infra | Competitive |
+| Checkout.com | Payments | Competitive |
+| Paddle | SaaS billing | Competitive |
+
+**Cambridge AI/ML (local advantage):**
+| Company | ML Focus | Notes |
+|---------|----------|-------|
+| Arm | GenAI, ML compilers, NPUs | Graduate + senior roles |
+| Darktrace | AI cybersecurity | 16 Cambridge jobs |
+| Speechmatics | ASR, billion-param models | 19 jobs, £59-81K |
+| Healx | ML drug discovery | Research engineer roles |
+| Luminance | Legal AI (LLMs, RAG) | Raised $75M |
+| Cambridge Consultants | Tech consulting | Graduate 2026 |
+
+### Outreach Process (Per Company)
+1. Apply through career page (ATS)
+2. Cold email recruiter same day (find via Hunter.io / Apollo.io)
+3. LinkedIn DM if no email response in 3 days
+4. One follow-up after 5-7 days
+5. Move on if nothing. Volume: 5-8 personalized per day.
+
+### Finding Contacts
+- LinkedIn: "[Company]" + "Engineering Recruiter" or "Talent Partner" (current employees)
+- If no recruiter: Engineering Manager or Head of ML
+- Cambridge companies: smaller teams = DM CTO/Head of Eng directly
+- Emails: Hunter.io (25 free/month), Apollo.io, patterns: firstname@company.com
+
+### Job Boards
+1. Direct company careers pages (highest response)
+2. Wellfound (formerly AngelList) — £104K avg London ML
+3. MachineLearningJobs.co.uk — UK-specific
+4. LinkedIn Jobs — largest volume
+5. Glassdoor UK — interview insights
+
+### Salary Targets
+- London: £95-110K base + equity
+- Cambridge: £85-100K base + equity
+- CTO experience is a differentiator — negotiate on leadership + end-to-end ownership
+
+### Interview Formats (UK Fintech MLE)
+1. Screening (30-45min)
+2. LeetCode coding (1-2 rounds, medium)
+3. ML system design (45-60min) — fraud detection, rec systems, embedding search
+4. ML theory/stats — bias-variance, regularization, evaluation metrics
+5. Behavioral (STAR, deep follow-ups)
+
+**Monzo:** Take-home + 5 interviews + intense behavioral
+**Revolut:** Live coding + system design + 3 culture fit rounds
+
+---
+
+## Daily Schedule (Full-Time, Night Owl)
+
+### Block 1 — Outreach (1.5-2h) — DO FIRST
+Research, personalize, send 5-8 messages. Highest-leverage activity.
+
+### Block 2 — Technical Prep (2-2.5h)
+- **Mon/Wed/Fri:** LeetCode (Python, NeetCode 150, pattern-based, 3-4 problems)
+- **Tue/Thu:** ML prep (system design, feature engineering, stats)
+- **Book:** "Designing Machine Learning Systems" by Chip Huyen
+- **Scala/FP:** 30min evening reading (depth, not direct interview ROI)
+
+### Block 3 — ScrollBuddy (2.5-3h)
+Feature dev, growth, user feedback. Also resume-building.
+
+### Block 4 — Personal Brand (1h)
+"Building a business vs applying for a role in 2026" series on TikTok.
+Doubles as ScrollBuddy marketing (founder journey -> followers -> users).
+
+### Weekly Rhythm
+- Mon-Fri: Full 4-block (~8h)
+- Sat: Deep ScrollBuddy (4-5h) + light LeetCode
+- Sun: Rest / batch content / Scala reading
 
 ---
 

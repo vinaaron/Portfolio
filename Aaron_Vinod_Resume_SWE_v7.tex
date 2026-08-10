@@ -1,0 +1,150 @@
+%-------------------------
+% Resume in Latex - SWE v7 (1 Page, Engineering-Depth, ATS Optimized, +Cogram +agentic)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+% \input{glyphtounicode} % pdftex-only; XeTeX embeds unicode natively
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% \pdfgentounicode=1
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Aaron Vinod}} & Email: \href{mailto:aaronvinod25@gmail.com}{aaronvinod25@gmail.com}\\
+  Cambridge, UK & Mobile: +44 7476 904065 \\
+  \href{https://github.com/vinaaron}{GitHub: github.com/vinaaron} | \href{https://portfolio-zeta-ecru-53.vercel.app/}{Portfolio} & \href{https://linkedin.com/in/aaron-vinod-a80016243}{LinkedIn: aaron-vinod-a80016243}\\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\small{Product engineer shipping full-stack with an \textbf{agent-first workflow} (Claude Code, Codex): customer interviews $\rightarrow$ working \textbf{v0 in 1.5 days}. Founder of a live App Store product (\textbf{2,000+ signups}).}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Bristol}{Bristol, UK}
+      {MEng Engineering Mathematics, First Class Honours}{Sep 2020 -- Jun 2024}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cogram}{Remote}
+      {Product Engineer}{Feb 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Product-Led Onboarding}
+          {Took the platform from sales-led-only to self-serve: designed and shipped a \textbf{14-day trial} onboarding flow for an enterprise AEC SaaS, now generating \textbf{4--10 inbound signups/week}}
+        \resumeItem{Mobile Platform Ownership}
+          {Rearchitected the meeting-capture upload pipeline from single-zip to \textbf{chunked, resumable S3 uploads} with idempotent ingestion (uploads survive dropped connections and app exits); shipped configurable \textbf{field-report types} adopted across client organisations}
+        \resumeItem{Discovery Velocity}
+          {\textbf{4 enterprise customer interviews} in one week $\rightarrow$ built a working scheduling \textbf{v0 in 1.5 days} (multi-agent workflow: \textbf{Claude Code}, \textbf{Codex}); now used in demos to prospective clients}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {LINQ}{Remote}
+      {CTO \& Technical Co-founder}{Sep 2025 -- Jan 2026}
+      \resumeItemListStart
+        \resumeItem{Database \& API Design}
+          {Designed \textbf{PostgreSQL} schema with \textbf{pgvector HNSW} vector similarity and \textbf{PostGIS} geo-ranking; async \textbf{FastAPI} backend with repository pattern and \textbf{Pydantic} validation}
+        \resumeItem{Mobile Architecture}
+          {Engineered \textbf{React Native} app on a \textbf{Zustand} + \textbf{React Query} + \textbf{MMKV} offline-first state architecture; \textbf{Auth0 JWT} auto-refresh with an interceptor queue preventing concurrent \textbf{401} storms}
+        \resumeItem{Infrastructure as Code}
+          {Designed \textbf{CI/CD} pipeline (\textbf{GitHub Actions} $\rightarrow$ ECR $\rightarrow$ \textbf{ECS Fargate}) with \textbf{Terraform} IaC; CI authenticates to AWS with short-lived \textbf{OIDC} tokens instead of stored keys}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ScrollBuddy}{Remote}
+      {Founder \& iOS Developer}{Aug 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Native iOS Integration}
+          {Built custom \textbf{Expo} native modules bridging iOS \textbf{Screen Time API} (DeviceActivity framework) with \textbf{Swift}, including \textbf{App Group} coordination between main app and shield extension}
+        \resumeItem{Offline-First Architecture}
+          {Designed offline-first architecture: \textbf{MMKV} encrypted storage, dual event queues (optimistic vs confirmed), idempotent background sync with exponential backoff}
+        \resumeItem{Social Accountability System}
+          {Designed buddy-approval architecture: blocker edits require a friend's sign-off, streaks invalidate on circumvention. \textbf{2,000+ signups}, \textbf{696 buddy connections}, multiple App Store releases}
+        \resumeItem{Growth Engineering}
+          {Built agent-driven marketing pipeline (content ideation $\rightarrow$ image generation $\rightarrow$ scheduled API posting) producing 4 days of multi-account content in \textbf{30 minutes}; \textbf{2M+ organic views} across launch content}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Sign Language Detection -- \$2.5K Hackathon Winner}
+      {Built coordinate-based NN using \textbf{Google MediaPipe} for hand landmark extraction with decentralized ML (Filecoin + Lilypad). \textbf{70\%} accuracy on ASL dataset. Encode Club Feb 2025.}
+    \resumeSubItem{Aviini Ltd (E-commerce)}
+      {Built eBay/Etsy API integrations with automated cron scheduling for revenue tracking; \textbf{\pounds25K profit} at 25-35\% margin over 18 months.}
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Languages}{TypeScript, Python, SQL, Swift (native modules)}
+   \resumeSubItem{Engineering}{React Native/Expo, Next.js, FastAPI, PostgreSQL (pgvector, PostGIS), Zustand, React Query}
+   \resumeSubItem{Cloud \& DevOps}{AWS (ECS Fargate, RDS, S3, CloudFront), Docker, Terraform, GitHub Actions, Supabase}
+   \resumeSubItem{Agentic}{Claude Code, Codex, multi-agent orchestration, MCP tooling}
+ \resumeSubHeadingListEnd
+
+\end{document}

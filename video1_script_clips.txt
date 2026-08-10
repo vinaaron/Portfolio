@@ -1,0 +1,623 @@
+# VIDEO #1 — BEAT SHEET (v2)
+
+The honest journey video. Hook: 9 months / £32 revenue.
+Spine: what entrepreneurship actually looks like, not what social media sells.
+Mission anchor: ScrollBuddy = impact over revenue.
+
+
+## HOW TO READ THIS
+
+This is a BEAT SHEET, not a script. Two rules:
+
+1. **BEATS** (numbered bullets) are anchors. You say each beat in your own
+   words. The bullets constrain the claim so you don't ramble — they don't
+   write the line for you.
+
+2. **VERBATIM** sections (marked clearly) are the lines that have to land
+   exactly. Hook. Contract. Mission. CTA. Lesson. About 6 lines across
+   the whole video. Read these as written. Everything else is yours.
+
+The **ARC** line at the top of each Part shows the emotional shape of
+that Part. Read it before the take. If the take ends and the arc didn't
+move, do another take.
+
+The **AVOID** notes are the common slips that would betray the tone.
+Glance at them before each beat.
+
+
+## TABLE OF CONTENTS
+
+- PART 1 — THE PROBLEM, IDEA AND HOW IT STARTED (8 beats, ~75 sec)
+- PART 2 — THE DETOUR: LINQ (5 beats, ~50 sec)
+- PART 3 — GRINDING & STAYING GROUNDED (8 beats, ~75 sec)
+- PART 4 — THE REAL NUMBERS (10 beats, ~100 sec)
+- PART 5 — THE PLAN (5 beats, ~50 sec)
+- PART 6 — OUTRO (6 beats, ~60 sec)
+
+Total: 42 beats, ~7 min of speech. With b-roll, transitions, music breaks
+→ roughly 9-11 min final cut.
+
+
+## VERBATIM MOMENTS (the 6 lines that have to land exactly)
+
+These are the only lines you read as written. Memorise these. Everything
+else is ad-lib over the beat structure.
+
+1. **HOOK** (Part 1, BEAT 1.1) — "Almost 9 months after constantly working
+   on an idea, building the app, and marketing it — here's everything I
+   have to show for it. Thirty-two pounds in revenue."
+
+2. **MISSION STATEMENT** (Part 1, BEAT 1.6) — "Impact, not revenue. If
+   ScrollBuddy gives one person back an hour a day, that matters more
+   than the MRR ever will."
+
+3. **CONTRACT** (Part 1, BEAT 1.7) — "Before I go on — this isn't a
+   highlight reel. You're going to see the real numbers, the real doubts,
+   and the part where I almost quit. If you want polished entrepreneurship
+   content, you're in the wrong place."
+
+4. **WALK-OUT PUNCHLINE** (Part 3, BEAT 3.8) — "So on that note... time
+   to be a bit social."
+
+5. **CTA** (Part 5, BEAT 5.4) — "If you want to be part of that — download
+   ScrollBuddy from the App Store. Try it. Tell me what's broken. Tell me
+   what would help."
+
+6. **LESSON LAND** (Part 6, BEAT 6.5, default uses verb A) — "If you take
+   one thing from this video — define your win before you pick the metric.
+   Mine isn't pounds in the bank. It's people getting their hours back."
+
+
+## VIEWER TAKEAWAY VERB — PICK ONE
+
+The whole video lands on ONE verb. Default uses A. To switch, swap the
+line in BEAT 6.5 below.
+
+- **A. (DEFAULT) "Define your win before you pick the metric."**
+  Pairs strongest with the £32-revenue hook. The number LOOKS like
+  failure but isn't, because the win is impact. Echoes ScrollBuddy's
+  mission directly.
+
+- **B. "Show up unglamorous."**
+  Pairs with the "raw real journey" channel thesis. More about the
+  doing than the measuring.
+
+- **C. "Keep showing up — the metrics will lie to you about whether
+  it's working."**
+  Most directly addresses a viewer who's stuck and second-guessing.
+
+
+---
+---
+
+
+## PART 1 — THE PROBLEM, IDEA AND HOW IT STARTED
+
+**Setup:** Living room. Wider camera, NOT below eye level. Walking to
+desk, setting up camera, opening laptop. Lock exposure first so the
+light doesn't drift mid-take.
+
+**Arc:** Punch the hook → frame what's coming → why you built this thing
+specifically → state the mission → set the contract with the viewer →
+bridge to Part 2.
+
+**Total:** 8 beats, ~75 sec.
+
+---
+
+**BEAT 1.1 — The hook (VERBATIM)**
+
+> **VERBATIM:** "Almost 9 months after constantly working on an idea,
+> building the app, and marketing it — here's everything I have to show
+> for it. Thirty-two pounds in revenue."
+
+- Deliver deadpan. The vulnerability is the strength.
+- *Avoid:* don't smile defensively. Don't tee it up with "so basically".
+  Hit it cold.
+
+---
+
+**BEAT 1.2 — What this video is**
+
+- Tell the viewer what the next 10 minutes covers: what happened, where
+  things are now, the plan from here.
+- Frame as the complete journey — idea, app, first 1,000 users, hopefully
+  one day revolutionising doomscrolling.
+- *Avoid:* don't oversell. The "revolutionising" word only works if you
+  half-laugh at the ambition while saying it.
+
+---
+
+**BEAT 1.3 — Channel context**
+
+- Three years of working on apps and businesses on this channel.
+- This time, building something that solves your own problem.
+
+---
+
+**BEAT 1.4 — Your own problem**
+
+- You were doomscrolling. Hours a day.
+- The "hated it, knew it, couldn't stop" confession — this is the WHY.
+- *Avoid:* don't generalise to "we all do it". Make it specific to you.
+
+---
+
+**BEAT 1.5 — ScrollBuddy was born**
+
+- 8 months ago. Built to give people back the time their phone is stealing.
+- One sentence — the simplest version of what ScrollBuddy is.
+
+---
+
+**BEAT 1.6 — The mission (VERBATIM)**
+
+> **VERBATIM:** "Impact, not revenue. If ScrollBuddy gives one person
+> back an hour a day, that matters more than the MRR ever will."
+
+- Don't rush this one. Each half-sentence is its own beat.
+- *Avoid:* don't qualify it. Don't say "I mean, obviously I'd like
+  revenue too". The line works because it doesn't hedge.
+
+---
+
+**BEAT 1.7 — The contract (VERBATIM)**
+
+> **VERBATIM:** "Before I go on — this isn't a highlight reel. You're
+> going to see the real numbers, the real doubts, and the part where
+> I almost quit. If you want polished entrepreneurship content, you're
+> in the wrong place."
+
+- Level eye contact through the whole line.
+- *Avoid:* don't smile at the end. Don't laugh through it. This is the
+  channel's deal with the viewer.
+
+---
+
+**BEAT 1.8 — Bridge to Part 2**
+
+- One sentence: "And so I went on building ScrollBuddy."
+- The simplest version. Don't elaborate. Don't preview Part 2.
+
+---
+---
+
+
+## PART 2 — THE DETOUR: LINQ
+
+**Setup:** At desk, centred, not too much space above your head. Natural
+transition — pick up/close the laptop as a visual chapter break. Kharel
+will splice in b-roll where indicated.
+
+**Arc:** Joined LINQ → confess the cost of two-things-at-once → ScrollBuddy
+shipped during LINQ + the distribution lesson → left LINQ matter-of-factly.
+
+**Total:** 5 beats, ~50 sec.
+
+---
+
+**BEAT 2.1 — Joining LINQ**
+
+- You joined LINQ as CTO. Platform partnered with Simon Squibb.
+- Set this up factually. Don't over-explain Simon or LINQ — Kharel's
+  b-roll will fill context.
+
+[Insert here: Kharel's b-roll about LINQ — the office, the platform,
+the partnership context.]
+
+---
+
+**BEAT 2.2 — Two apps at once (the confession)**
+
+- ScrollBuddy + LINQ in parallel.
+- Name the cost cleanly: neither got your full attention.
+- Specifically: ScrollBuddy slowed; LINQ won the energy.
+- Frame it as a trade you didn't see you were making.
+- *Avoid:* don't blame anyone. The lesson only works if you own it.
+
+---
+
+**BEAT 2.3 — But the first proper ScrollBuddy shipped**
+
+- During LINQ, the first real version of ScrollBuddy went live.
+- And you started filming short-form to find users.
+
+---
+
+**BEAT 2.4 — The distribution lesson**
+
+- Building without distribution is just a hobby.
+- If nobody knows the thing exists, the thing doesn't exist.
+- *Avoid:* don't qualify with "for me personally". State it as a rule.
+
+---
+
+**BEAT 2.5 — Leaving LINQ**
+
+- After a few months you left.
+- The reason in one or two sentences: team wasn't aligned, equity didn't
+  match the work.
+- Don't dwell. Don't get specific.
+- *Avoid:* anything that reads as bitter. Matter-of-fact only.
+
+[Insert here: the clip you filmed while leaving LINQ.]
+
+
+---
+---
+
+
+## PART 3 — GRINDING & STAYING GROUNDED
+
+**Setup:** Continue at desk for most of Part 3. The walk only happens at
+the very end (BEAT 3.8). This protects you from the "nowhere to look
+while walking" problem Kharel flagged in the original.
+
+**Arc:** Doubt → sit with it → see what you'd been doing wrong (the
+turn) → decision → action → payoff → honest about the cost → balance
+reset → walk out to badminton.
+
+**Total:** 8 beats, ~75 sec.
+
+**What got relocated out of this Part since v1:**
+- Short-form posting / goals / results → moved to Part 4 (where it fits
+  the 1,030-users story naturally).
+- Bug-fixing / improving app simultaneously → moved to Part 5 (where it
+  fits the "jumping on user calls" plan).
+
+---
+
+**BEAT 3.1 — The crash after LINQ**
+
+- The day or two post-LINQ where you didn't know what to do.
+- Name the doubt out loud: "maybe entrepreneurship isn't for me."
+- *Avoid:* don't pile on a second doubt phrase. Pick the one and let it
+  sit.
+
+---
+
+**BEAT 3.2 — The realisation (the turn)**
+
+- Once you sat with the doubt a couple days, you saw something.
+- For 3 years you'd been throwing darts at a wall — building solutions,
+  then trying to find problems to match.
+- The metaphor IS the point. Say it clean.
+- *Avoid:* don't apologise for the 3 wasted years. Naming the mistake
+  is the strength of the beat.
+
+---
+
+**BEAT 3.3 — The decision**
+
+- Once you saw the pattern, the move was obvious: do the opposite.
+- Stop inventing the next thing. Go find people who were already
+  building something real.
+
+---
+
+**BEAT 3.4 — The action**
+
+- Cold emails. Applications. Constant.
+- About a month of it.
+- Landing: Cogram.
+
+---
+
+**BEAT 3.5 — The payoff**
+
+- What landing Cogram actually changed: income, stability, brain space
+  to keep ScrollBuddy alive on the side.
+- *Avoid:* don't perform gratitude. Don't say "I'm so lucky". Just
+  state the change.
+
+---
+
+**BEAT 3.6 — The honest caveat**
+
+- But the focus was split. And it stayed split.
+- This is the beat that earns the viewer's trust — by not lying about
+  the cost.
+
+---
+
+**BEAT 3.7 — Family / balance**
+
+- Working two things is a lot. But friends and family aren't the trade-off.
+- Balance matters.
+
+---
+
+**BEAT 3.8 — Walk out (VERBATIM punchline)**
+
+- Stand up, close laptop, pick up bag.
+
+> **VERBATIM:** "So on that note... time to be a bit social."
+
+- Hand covers camera as you say "social" → cut.
+
+[Cut to badminton b-roll / montage.]
+
+
+---
+---
+
+
+## PART 4 — THE REAL NUMBERS
+
+**Setup:** Return from badminton. Holding osmo (handheld), walking back
+to your room. Settle, place the camera on the desk, open laptop while
+talking. Slightly more centred than Part 1.
+
+**Arc:** Numbers cold → honesty reminder → critique the highlight-reel
+industry → reveal how the users actually came (short-form grind) → the
+reframe (£30 isn't failure) → mission callback → impact-as-the-real-number.
+
+**Total:** 10 beats, ~100 sec.
+
+---
+
+**BEAT 4.1 — Transition into numbers**
+
+- Until now you've talked about how it started. Time to talk about how
+  it's doing.
+- Frame as "the real numbers".
+
+---
+
+**BEAT 4.2 — Drop the numbers cold**
+
+- Eight months in.
+- 1,030 users.
+- 400 active every month.
+- £30 in recurring revenue.
+- Hit each number distinctly. Don't run them together.
+- *Avoid:* don't soften them. Don't say "only" or "just". The numbers
+  are the numbers.
+
+---
+
+**BEAT 4.3 — Honesty reminder (echo of the contract)**
+
+- Going to be completely honest about all of this.
+- Sugarcoating defeats the whole point of this channel.
+
+---
+
+**BEAT 4.4 — The industry critique**
+
+- Startups get glorified online.
+- Founders post the wins and skip the long painful stretches.
+- *Avoid:* don't name specific creators. Don't be petty.
+
+---
+
+**BEAT 4.5 — The real texture**
+
+- It's not what it looks like in the highlight reels.
+- Demanding. Risky. Most days quietly brutal.
+- One-word landings work here — let each word breathe.
+
+---
+
+**BEAT 4.6 — How the users actually came (relocated content)**
+
+- Most of those 1,030 users came from short-form.
+- You, filming, posting — often awkward, often ignored — for months.
+
+---
+
+**BEAT 4.7 — The first few videos got nothing**
+
+- Be specific about how flat the start was.
+- The reason you kept going: the alternative was no users at all.
+
+---
+
+**BEAT 4.8 — The reframe (THE TURN of Part 4)**
+
+- £30 a month isn't failure.
+- It's just not the metric you're measuring.
+- This is the beat the whole video pivots on. Land it clean.
+
+---
+
+**BEAT 4.9 — Mission callback**
+
+- ScrollBuddy is free.
+- The only paid thing is the AI partner — and that's because it actually
+  costs you to run.
+- Everything else is free, because impact is the point, not the price.
+
+---
+
+**BEAT 4.10 — The real number**
+
+- A thousand people using something you built to give them their
+  attention back — that's the number you care about.
+- Revenue follows or it doesn't, but the impact is real.
+
+
+---
+---
+
+
+## PART 5 — THE PLAN
+
+**Setup:** Same desk shot as end of Part 4. Slight forward energy — this
+is the "what's next" beat.
+
+**Arc:** This is just the beginning → name your weak link (consistency)
+→ what you're doing on ScrollBuddy now → the CTA → more is coming.
+
+**Total:** 5 beats, ~50 sec.
+
+---
+
+**BEAT 5.1 — Setup**
+
+- This is just the beginning of a long journey.
+- One sentence. Declaration.
+
+---
+
+**BEAT 5.2 — Your weak link**
+
+- Biggest challenge has always been consistency. Showing up when
+  nobody's watching.
+- Doubling down on that now.
+- *Avoid:* don't list excuses for past inconsistency. Just own it.
+
+---
+
+**BEAT 5.3 — What you're doing on ScrollBuddy (relocated content)**
+
+- Jumping on calls with existing users.
+- Taking their feedback.
+- Fixing the bugs they hit.
+- Working on what would make ScrollBuddy genuinely better.
+
+---
+
+**BEAT 5.4 — The CTA (VERBATIM)**
+
+> **VERBATIM:** "If you want to be part of that — download ScrollBuddy
+> from the App Store. Try it. Tell me what's broken. Tell me what would
+> help."
+
+- *Avoid:* don't soften the ask. Don't say "no pressure". Don't say
+  "if you can". State it.
+
+---
+
+**BEAT 5.5 — Forward**
+
+- ScrollBuddy isn't the only thing you'll be building.
+- More is coming. Some will work. Most won't.
+- The viewer sees all of it.
+
+
+---
+---
+
+
+## PART 6 — OUTRO
+
+**Setup:** Walking outside ideally — matches the "raw real journey" tone.
+Handheld or osmo. If filming outside isn't possible, the desk works as
+fallback but loses texture.
+
+**Arc:** Acknowledge this video looks different → Kharel reveal (full
+circle) → channel's thesis → contrast with content gurus → the lesson
+lands → subscribe close.
+
+**Total:** 6 beats, ~60 sec.
+
+---
+
+**BEAT 6.1 — This looks different**
+
+- If they've seen older videos, this one's intentionally different.
+
+---
+
+**BEAT 6.2 — The Kharel reveal**
+
+- Upgraded gear. Brought on Kharel as editor + social media manager.
+- The full-circle bit: he was actually one of your early viewers on
+  the live streams.
+- *Avoid:* don't oversell Kharel. The full-circle fact speaks for itself.
+
+---
+
+**BEAT 6.3 — The channel's thesis**
+
+- Why this setup: you want to be an entrepreneur who shows the journey
+  by doing it.
+- Not a content person who does things for the content.
+
+---
+
+**BEAT 6.4 — The contrast (gentle, not bitter)**
+
+- Most "gurus" online are content creators first.
+- They do things for the content.
+- You're trying to do the opposite — do the thing, let people watch.
+- *Avoid:* don't name names. Don't get bitter. The contrast is the
+  point, not the takedown.
+
+---
+
+**BEAT 6.5 — The lesson lands (VERBATIM — uses verb A by default)**
+
+> **VERBATIM:** "If you take one thing from this video — define your
+> win before you pick the metric. Mine isn't pounds in the bank. It's
+> people getting their hours back."
+
+**If you swap to verb B or C, replace BEAT 6.5 with:**
+
+> **[B]:** "If you take one thing from this video — show up unglamorous.
+> The version of you that's not optimised for the camera is the one
+> that builds something real."
+
+> **[C]:** "If you take one thing from this video — keep showing up.
+> The metrics will lie to you about whether it's working. Trust the
+> work instead."
+
+---
+
+**BEAT 6.6 — The close**
+
+- Lots more coming from this channel.
+- Make sure they're subscribed.
+- "I'll see you in the next one."
+- *Avoid:* don't beg for the subscribe. State it.
+
+
+---
+---
+
+
+## SHOOT NOTES (for both Aaron + Kharel)
+
+- **Lock camera exposure** before each scene starts so the light doesn't
+  drift mid-take (Kharel's note from last shoot).
+- Camera at or slightly above eye level. Below eye level looks
+  subordinate; above looks aspirational.
+- For desk beats, give yourself wider frame than feels comfortable —
+  Kharel will crop in post, and the extra space lets him cut to closer
+  shots for emphasis on key beats (1.7 contract, 4.8 reframe, 6.5 lesson).
+- The badminton b-roll between Parts 3 and 4 is the video's natural
+  exhale — hard cut from movement-energy to settled-at-desk.
+- The CTA in BEAT 5.4 is the only product ask. Keep it warm and short.
+  Don't add a second CTA in Part 6 — the subscribe ask there is for the
+  channel, not the app.
+
+## DELIVERY NOTES (for Aaron)
+
+- Read the **Arc** line of a Part before starting any of its takes. If
+  the take ends and the arc didn't move, do another take.
+- Read the bullets of a beat 30 seconds before the take. Don't memorise
+  them. Just internalise the claim, then say it your way.
+- Verbatim lines are the only memorisation. Six total across the whole
+  video.
+- If you catch yourself rambling mid-take, stop. Reset. The bullet exists
+  to constrain the claim — if you're not on the claim anymore, you're
+  off the beat.
+- The "Avoid" notes are the failure modes. Glance at them once before
+  each beat. They're not rules; they're flags for the slips that would
+  cheapen the tone.
+
+
+## CROSS-REFERENCES
+
+- `video_phase1_brief.txt` and `video_phase2_brief.txt` are the raw
+  research briefs for the editor — useful for B-roll context (LINQ
+  details, Aviini backstory, the Kharel-was-a-viewer full circle).
+- `video2_phase1_brief.txt` is the brief for the standalone hackathon
+  video (Video #2). Don't conflate the two — Video #1 is the broad
+  journey; Video #2 is the hackathon deep-dive.
+
+
+=====
+END
+=====

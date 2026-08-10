@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEST Assessment Evidence Trail - Aaron Vinod / Cogram</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e1e4e8; line-height: 1.6; padding: 2rem; max-width: 960px; margin: 0 auto; }
+    h1 { font-size: 1.8rem; color: #58a6ff; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.3rem; color: #58a6ff; margin: 2rem 0 1rem; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.1rem; color: #c9d1d9; margin: 1.5rem 0 0.75rem; }
+    .subtitle { color: #8b949e; margin-bottom: 2rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { padding: 0.6rem 0.75rem; text-align: left; border-bottom: 1px solid #21262d; }
+    th { color: #8b949e; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    td { color: #c9d1d9; font-size: 0.9rem; }
+    .total { border-top: 2px solid #30363d; font-weight: 700; }
+    .total td { color: #58a6ff; }
+    .highlight { color: #3fb950; }
+    .warn { color: #d29922; }
+    .negative { color: #f85149; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+    .card-green { border-color: #238636; }
+    .card-yellow { border-color: #9e6a03; }
+    .card-blue { border-color: #1f6feb; }
+    .tag { display: inline-block; font-size: 0.75rem; padding: 0.15rem 0.5rem; border-radius: 12px; font-weight: 600; margin-right: 0.25rem; }
+    .tag-green { background: #238636; color: #fff; }
+    .tag-yellow { background: #9e6a03; color: #fff; }
+    .tag-red { background: #da3633; color: #fff; }
+    .tag-blue { background: #1f6feb; color: #fff; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .source { font-size: 0.8rem; color: #8b949e; }
+    .source a { color: #8b949e; }
+    .source a:hover { color: #58a6ff; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } body { padding: 1rem; } }
+    .callout { background: #1c2128; border-left: 3px solid #d29922; padding: 1rem; margin: 1rem 0; border-radius: 0 6px 6px 0; }
+    .callout-green { border-left-color: #238636; }
+    hr { border: none; border-top: 1px solid #21262d; margin: 2rem 0; }
+    blockquote { background: #161b22; border-left: 3px solid #30363d; padding: 0.75rem 1rem; margin: 0.5rem 0; font-style: italic; color: #8b949e; font-size: 0.85rem; }
+    .evidence-row td:nth-child(3) { min-width: 80px; }
+    .evidence-row td:nth-child(4) { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.8rem; color: #d29922; min-width: 90px; }
+    .evidence-row td:last-child { font-size: 0.85rem; color: #8b949e; }
+    .result-banner { background: #0d1117; border: 2px solid #238636; border-radius: 8px; padding: 1.5rem; text-align: center; margin: 1.5rem 0; }
+    .result-banner h2 { border: none; margin: 0; font-size: 1.5rem; }
+    .result-banner p { color: #8b949e; margin-top: 0.5rem; }
+    .indicator { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 0.5rem; }
+    .indicator-green { background: #3fb950; }
+    .indicator-yellow { background: #d29922; }
+    .indicator-red { background: #f85149; }
+    @media print {
+      body { background: #fff; color: #1a1a1a; padding: 1rem; }
+      h1, h2, h3 { color: #1a1a1a; }
+      h2 { border-bottom-color: #ccc; }
+      .subtitle { color: #666; }
+      th { color: #666; }
+      td { color: #333; }
+      .card, .callout, blockquote, .result-banner { background: #f6f6f6; border-color: #ccc; }
+      .result-banner { border-color: #2da44e; }
+      .evidence-row td:nth-child(4) { color: #b35900; }
+      .evidence-row td:last-child { color: #555; }
+      .tag { border: 1px solid #999; background: #eee; color: #333; }
+      a { color: #0969da; }
+      .source, .source a { color: #666; }
+      .highlight { color: #1a7f37; }
+      .warn { color: #9a6700; }
+      .negative { color: #cf222e; }
+      table { page-break-inside: auto; }
+      tr { page-break-inside: avoid; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CEST Assessment Evidence Trail</h1>
+  <p class="subtitle">HMRC Check Employment Status for Tax &mdash; Contractor Agreement with Cogram Technologies GmbH</p>
+
+  <!-- Result Banner -->
+  <div class="result-banner">
+    <h2 class="highlight" style="border:none; margin:0;">Self-employed for tax purposes for this work</h2>
+    <p>HMRC CEST determination &mdash; 8 March 2026</p>
+  </div>
+
+  <div class="callout-green callout">
+    <strong>HMRC will stand by this result</strong> as long as it reflects the actual or expected working practices. If these working practices change, the CEST tool should be used again.
+  </div>
+
+  <!-- Section 1: Contract Summary -->
+  <h2>1. Contract Summary</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Parties</h3>
+      <table>
+        <tr><td><strong>Contractor</strong></td><td>Aaron Vinod (Sole Trader)</td></tr>
+        <tr><td><strong>Client</strong></td><td>Cogram Technologies GmbH</td></tr>
+        <tr><td><strong>Platform</strong></td><td>Deel (payment agent)</td></tr>
+        <tr><td><strong>Contract Ref</strong></td><td>38p5y5n</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3>Terms</h3>
+      <table>
+        <tr><td><strong>Role</strong></td><td>Product Engineer (Mid, IC Level 2)</td></tr>
+        <tr><td><strong>Start Date</strong></td><td>3 March 2026</td></tr>
+        <tr><td><strong>Rate</strong></td><td>&euro;5,833.34/month (&euro;70,000.08/year)</td></tr>
+        <tr><td><strong>Notice</strong></td><td>30 days (1 day during 8-week probation)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card card-blue">
+    <h3>Special Clauses</h3>
+    <p><span class="tag tag-blue">Stock Options</span> 28,800 options, 4-year vesting with 1-year cliff, grant within 1 year of start date</p>
+    <p style="margin-top:0.5rem"><span class="tag tag-yellow">Probation</span> First 8 weeks: either party may terminate with 1 day's notice</p>
+  </div>
+
+  <!-- Section 2: CEST Answers with Evidence -->
+  <h2>2. CEST Answers with Contract Evidence</h2>
+
+  <p class="source">Each answer is mapped to the specific clause in the Contractor Agreement (REF: 38p5y5n) that supports it. Where no contract clause applies, the justification is marked as factual.</p>
+
+  <h3>About You</h3>
+  <table>
+    <thead>
+      <tr><th>Question</th><th>Answer</th><th>Clause</th><th>Contract Evidence</th></tr>
+    </thead>
+    <tbody>
+      <tr class="evidence-row">
+        <td>Who are you?</td>
+        <td>Worker</td>
+        <td>N/A</td>
+        <td>Completing as the contractor (worker perspective)</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Contract in place?</td>
+        <td>Yes</td>
+        <td>Agreement</td>
+        <td>Contractor Agreement REF 38p5y5n, effective 3 March 2026</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Services through limited company, partnership or unincorporated association?</td>
+        <td>No</td>
+        <td>Deel Summary</td>
+        <td>Contracted as individual sole trader, not through intermediary. IR35 intermediary rules do not apply.</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Are you an office holder?</td>
+        <td>No</td>
+        <td>N/A</td>
+        <td>Not a director, trustee, or board member of Cogram. Separate directorship of Aviini Ltd is unrelated to this engagement.</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Job role category</td>
+        <td>Communications and IT</td>
+        <td>Deel Summary</td>
+        <td>Role: Product Engineer. Falls under "developer, IT architect" in CEST categories.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Personal Service</h3>
+  <table>
+    <thead>
+      <tr><th>Question</th><th>Answer</th><th>Clause</th><th>Contract Evidence</th></tr>
+    </thead>
+    <tbody>
+      <tr class="evidence-row">
+        <td>Already started working?</td>
+        <td>Yes</td>
+        <td>N/A</td>
+        <td>Factual: started 3 March 2026</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Ever sent a substitute?</td>
+        <td>No, it has not happened</td>
+        <td>N/A</td>
+        <td>Factual: no substitute has been sent to date</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Client right to reject a substitute?</td>
+        <td><span class="warn">Yes</span></td>
+        <td>Cl. 1.4</td>
+        <td>"Contractor may appoint a suitably skilled substitute... <strong>provided that Client is satisfied</strong> that the sub-contractor possesses the necessary skills, expertise and resources"</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Paid another person to do significant amount of work?</td>
+        <td>No</td>
+        <td>N/A</td>
+        <td>Factual: all work performed personally</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Control <span class="tag tag-green">Key Factor: Self-Employment</span></h3>
+  <table>
+    <thead>
+      <tr><th>Question</th><th>Answer</th><th>Clause</th><th>Contract Evidence</th></tr>
+    </thead>
+    <tbody>
+      <tr class="evidence-row">
+        <td>Right to move you from agreed task?</td>
+        <td><span class="highlight">No, new contract required</span></td>
+        <td>Cl. 1.1</td>
+        <td>"A Statement of Work may be amended only by a signed (by each party's authorized signatory) and <strong>written agreement of the parties</strong>."</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Right to decide how work is done?</td>
+        <td><span class="highlight">No, you solely decide</span></td>
+        <td>Cl. 1.2, Preamble C, D</td>
+        <td>
+          Cl. 1.2: "Contractor will determine, <strong>in Contractor's sole discretion</strong>, the manner and means by which the Services are accomplished"<br>
+          Preamble C: "excluding as of now any intervention by Client regarding the <strong>modalities of performance</strong>"<br>
+          Preamble D: "excludes any subjection to the <strong>power of direction or control</strong>"
+        </td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Right to decide working hours?</td>
+        <td><span class="highlight">No, you solely decide</span></td>
+        <td>Cl. 1.3, Preamble C</td>
+        <td>
+          Cl. 1.3: "Contractor will determine the <strong>time</strong>, place and order in which Contractor will perform the Services"<br>
+          Preamble C: "the <strong>time of execution</strong> of the Service"
+        </td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Right to decide where you work?</td>
+        <td><span class="highlight">No, you solely decide</span></td>
+        <td>Cl. 1.3</td>
+        <td>
+          "Contractor will perform the Services at <strong>Contractor's offices or facilities</strong>"<br>
+          "Contractor will determine the time, <strong>place</strong> and order"
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Financial Risk</h3>
+  <table>
+    <thead>
+      <tr><th>Question</th><th>Answer</th><th>Clause</th><th>Contract Evidence</th></tr>
+    </thead>
+    <tbody>
+      <tr class="evidence-row">
+        <td>Buy equipment before payment?</td>
+        <td>No</td>
+        <td>Cl. 1.3</td>
+        <td>"using Contractor's instruments, equipment and tools" &mdash; own personal laptop exists; no heavy/specialist equipment required for software engineering</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Fund vehicle costs?</td>
+        <td>No</td>
+        <td>N/A</td>
+        <td>Factual: fully remote work from Cambridge, UK. No vehicle costs for this engagement.</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Buy materials?</td>
+        <td>No</td>
+        <td>N/A</td>
+        <td>Factual: software engineering role. No physical materials purchased or left behind.</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Fund other costs?</td>
+        <td>No</td>
+        <td>N/A</td>
+        <td>Factual: no travel or external premises required. Home office costs are standard sole trader business expenses.</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>How paid?</td>
+        <td>Hourly, daily or weekly rate</td>
+        <td>Deel Summary</td>
+        <td>Fixed monthly rate of &euro;5,833.34 paid via Deel. Time-based compensation (equivalent to regular rate).</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Put right unsatisfactory work?</td>
+        <td>Fix in usual hours at usual rate</td>
+        <td>Cl. 2.1</td>
+        <td>Monthly rate payment with no unpaid rework clause. Any fixes done during normal engagement at same rate.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Worker's Involvement</h3>
+  <table>
+    <thead>
+      <tr><th>Question</th><th>Answer</th><th>Clause</th><th>Contract Evidence</th></tr>
+    </thead>
+    <tbody>
+      <tr class="evidence-row">
+        <td>Paid-for corporate benefits?</td>
+        <td>No</td>
+        <td>Cl. 3.1</td>
+        <td>"Contractor will not be entitled to any statutory benefits payable to employees... including, without limitation, any <strong>retirement or pension benefits, social security contributions... vacation, holiday, or illness payments</strong>"</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Management responsibilities?</td>
+        <td>No</td>
+        <td>Cl. 3.2</td>
+        <td>"Contractor will have <strong>no authority</strong> to enter into agreements that bind Client... will not hold itself out as being an employee, agent, partner or assignee of Client"</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>How introduce yourself?</td>
+        <td>Independent worker on client's behalf</td>
+        <td>Cl. 3.1, 3.2</td>
+        <td>Cl. 3.1: "independent contractor acting as a <strong>service provider</strong> to Client, and not that of an employee"<br>
+        Cl. 3.2: "will make such <strong>absence of authority clear</strong> in its dealings with any third parties"</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Worker's Contract</h3>
+  <table>
+    <thead>
+      <tr><th>Question</th><th>Answer</th><th>Clause</th><th>Contract Evidence</th></tr>
+    </thead>
+    <tbody>
+      <tr class="evidence-row">
+        <td>Contract stops similar work for others?</td>
+        <td><span class="warn">Yes</span></td>
+        <td>Cl. 7.4</td>
+        <td>Non-compete clause: cannot participate in competitive business during contract term without written consent</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Ownership rights in contract?</td>
+        <td><span class="warn">Yes</span></td>
+        <td>Cl. 4.2</td>
+        <td>"all Contractor Work Product will be the <strong>sole and exclusive property</strong> of Client"</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Rights belong to client?</td>
+        <td><span class="warn">Yes</span></td>
+        <td>Cl. 4.2</td>
+        <td>"Contractor hereby <strong>irrevocably transfers and assigns</strong> to Client... all right, title and interest in and to Contractor Work Product, including all worldwide patent rights... copyright rights, trademarks, trade secret rights"</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Previous contract with this client?</td>
+        <td>No</td>
+        <td>N/A</td>
+        <td>Factual: first engagement with Cogram Technologies GmbH</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>First in a series of contracts?</td>
+        <td><span class="warn">Yes</span></td>
+        <td>N/A</td>
+        <td>Factual: initial contract, potential for ongoing engagement</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Majority of available working time?</td>
+        <td><span class="warn">Yes</span></td>
+        <td>N/A</td>
+        <td>Factual: &euro;70K/year contract is primary income source. Also works on personal project (ScrollBuddy) in own time.</td>
+      </tr>
+      <tr class="evidence-row">
+        <td>Similar self-employed work for others in last 12 months?</td>
+        <td><span class="warn">No</span></td>
+        <td>N/A</td>
+        <td>Factual: previous work was as co-founder/CTO of LINQ (own startup) and personal product (ScrollBuddy). Not contracted self-employed work for external clients.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Section 3: Analysis -->
+  <h2>3. Why Self-Employed: Factor Analysis</h2>
+
+  <div class="card card-green">
+    <h3><span class="indicator indicator-green"></span>Self-Employment Indicators (Decisive)</h3>
+    <p>HMRC determined self-employed because <strong>the client does not have control over this work</strong>. The following factors were decisive:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Sole discretion over manner and means</strong> (Cl. 1.2) &mdash; contractor decides how work is done</li>
+      <li><strong>Control over time and place</strong> (Cl. 1.3) &mdash; contractor sets own hours and location</li>
+      <li><strong>Autonomous collaboration</strong> (Preamble C, D) &mdash; contract explicitly excludes client direction/control</li>
+      <li><strong>Task-specific engagement</strong> (Cl. 1.1) &mdash; scope changes require new written agreement</li>
+      <li><strong>No corporate benefits</strong> (Cl. 3.1) &mdash; no pension, holiday, sick pay</li>
+      <li><strong>No management authority</strong> (Cl. 3.2) &mdash; cannot bind client or manage employees</li>
+      <li><strong>Independent status</strong> (Cl. 3.1, 3.3) &mdash; explicitly not a contract of employment</li>
+      <li><strong>Substitution right exists</strong> (Cl. 1.4) &mdash; contractor may appoint substitutes (subject to client approval)</li>
+    </ul>
+  </div>
+
+  <div class="card card-yellow">
+    <h3><span class="indicator indicator-yellow"></span>Employment Indicators (Present but Outweighed)</h3>
+    <p>These factors point toward employment but were insufficient to change the overall determination:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Non-compete clause</strong> (Cl. 7.4) &mdash; restricts competitive work during contract term</li>
+      <li><strong>IP assignment</strong> (Cl. 4.2) &mdash; all work product belongs to client</li>
+      <li><strong>Client can reject substitutes</strong> (Cl. 1.4) &mdash; substitution not unconditional</li>
+      <li><strong>Fixed monthly rate</strong> &mdash; time-based rather than project/deliverable-based pay</li>
+      <li><strong>Majority of working time</strong> &mdash; primary income source</li>
+      <li><strong>First contract, no prior self-employed history</strong> &mdash; no established pattern of contracting</li>
+      <li><strong>Fix work at usual rate</strong> &mdash; no financial risk from unsatisfactory work</li>
+    </ul>
+  </div>
+
+  <div class="callout">
+    <strong>Note on "control" and code reviews:</strong> The CEST "control" test assesses whether the client dictates <em>how</em> work is performed (process control), not whether quality assurance practices exist. Code reviews, merge approvals, and CI checks are industry-standard quality gates applied equally to employees and contractors. Working within an existing tech stack (Python, TypeScript) and following existing architecture patterns are project specifications, not process control. HMRC's Employment Status Manual (ESM11070) distinguishes between controlling the process and checking deliverable quality.
+  </div>
+
+  <!-- Section 4: Contract Reference -->
+  <h2>4. Contract Reference</h2>
+
+  <div class="card">
+    <h3>Contractor Agreement Details</h3>
+    <table>
+      <tr><td><strong>Agreement Type</strong></td><td>Deel Standard Contract</td></tr>
+      <tr><td><strong>Reference</strong></td><td>38p5y5n</td></tr>
+      <tr><td><strong>Client Entity</strong></td><td>Cogram Technologies GmbH (German GmbH, reg. 356031874)</td></tr>
+      <tr><td><strong>Client Address</strong></td><td>Oppelner Str. 30, Berlin 10997, Germany</td></tr>
+      <tr><td><strong>Client Contact</strong></td><td>ricardo@cogram.com</td></tr>
+      <tr><td><strong>Payment Agent</strong></td><td>Deel Inc., 425 1st St, San Francisco, CA 94105</td></tr>
+      <tr><td><strong>Governing Law</strong></td><td>German law (Cl. 10.5)</td></tr>
+      <tr><td><strong>Contractor Tax Status</strong></td><td>UK Sole Trader (Self Assessment)</td></tr>
+      <tr><td><strong>Tax Responsibility</strong></td><td>Contractor responsible for all Income Tax and NI (Cl. 3.3)</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Scope of Work (from Deel Summary)</h3>
+    <ul style="margin: 0.5rem 0 0 1.5rem; color: #8b949e;">
+      <li>Design and develop new products in alignment with strategic objectives</li>
+      <li>Conduct testing and validation of product designs</li>
+      <li>Collaborate with cross-functional teams to integrate features</li>
+      <li>Analyze product performance data for improvement</li>
+      <li>Oversee prototyping process</li>
+      <li>Document product specifications, design changes, and testing results</li>
+      <li>Support resolution of technical issues</li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <h2>5. Document Information</h2>
+  <table>
+    <tr><td><strong>CEST Assessment Date</strong></td><td>8 March 2026</td></tr>
+    <tr><td><strong>CEST Result</strong></td><td>Self-employed for tax purposes</td></tr>
+    <tr><td><strong>CEST File Reference</strong></td><td>CEST_Cogram_Aaron_Vinod_2026-03-08</td></tr>
+    <tr><td><strong>Evidence Trail Created</strong></td><td>8 March 2026</td></tr>
+    <tr><td><strong>Prepared By</strong></td><td>Aaron Vinod</td></tr>
+    <tr><td><strong>Contract Reviewed</strong></td><td>Cogram-Standard-Deel-Contract.pdf (21 pages)</td></tr>
+  </table>
+
+  <p class="source" style="margin-top: 2rem;">
+    CEST Tool: <a href="https://www.gov.uk/guidance/check-employment-status-for-tax" target="_blank">gov.uk/guidance/check-employment-status-for-tax</a><br>
+    Employment Status Manual: <a href="https://www.gov.uk/hmrc-internal-manuals/employment-status-manual" target="_blank">gov.uk/hmrc-internal-manuals/employment-status-manual</a><br>
+    IR35 Guidance: <a href="https://www.gov.uk/understanding-off-payroll-working-ir35" target="_blank">gov.uk/understanding-off-payroll-working-ir35</a>
+  </p>
+
+</body>
+</html>

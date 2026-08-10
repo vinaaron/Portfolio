@@ -1,0 +1,149 @@
+%-------------------------
+% Resume in Latex - MLE v4 (1 Page Optimized)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Aaron Vinod}} & Email: \href{mailto:aaronvinod25@gmail.com}{aaronvinod25@gmail.com}\\
+  Cambridge, UK & Mobile: +44 7476 904065 \\
+  \href{https://github.com/ce20480}{GitHub: github.com/ce20480} & \href{https://linkedin.com/in/aaron-vinod-a80016243}{LinkedIn: aaron-vinod-a80016243}\\
+  \href{https://portfolio-zeta-ecru-53.vercel.app/}{Portfolio: portfolio-zeta-ecru-53.vercel.app} & \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Bristol}{Bristol, UK}
+      {MEng Engineering Mathematics, First Class Honours}{Sep 2020 -- Jun 2024}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Specialization:} Machine Learning \& Neural Networks}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Thesis:} Decision-making via random walks (stochastic processes)}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Modules:} Linear Algebra, Applied Statistics, Stochastic Processes, Optimization, Numerical Methods, ML}}}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LINQ}{Remote}
+      {CTO \& Technical Co-founder}{Sep 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Vector Search}
+          {Architected vector similarity matching using Gemini embeddings (752D), achieving 80-90\% match accuracy}
+        \resumeItem{Cost Optimization}
+          {Chose Gemini over OpenAI embeddings for cost efficiency while maintaining accuracy}
+        \resumeItem{LLM Integration}
+          {Implemented LLM re-ranking via Groq for fast inference ($<$5s latency)}
+        \resumeItem{Infrastructure}
+          {Deployed full-stack on AWS (ECS Fargate with auto-scaling, RDS, CloudFront, ALB)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MyGreenDoor}{Bristol, UK}
+      {ML Engineer (Part-time)}{Jan 2023 -- Jun 2023}
+      \resumeItemListStart
+        \resumeItem{Clustering}
+          {Developed k-NN clustering algorithm for property retrofit recommendations (UK sustainability initiative)}
+        \resumeItem{Data Pipeline}
+          {Built end-to-end data pipeline using Python, pandas, scikit-learn}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Encode Club ``AI Blueprints'' Hackathon}{Remote}
+      {Winner (\$2.5K Prize)}{Feb 2025}
+      \resumeItemListStart
+        \resumeItem{CNN}
+          {Built sign language detection CNN on ASL dataset (70\% accuracy)}
+        \resumeItem{Decentralized ML}
+          {Implemented Filecoin for model storage + Lilypad for distributed compute}
+        \resumeItem{Demo}
+          {Next.js frontend + Python API for real-time inference}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ScrollBuddy}{Remote}
+      {Founder}{Aug 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Shipping}
+          {Built and shipped anti-doomscrolling iOS app to App Store (React Native/Expo)}
+        \resumeItem{Growth}
+          {Generated 2M+ organic TikTok views; first paying user within 48 hours}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{ML/Math}{PyTorch, scikit-learn, vector embeddings, LLM integration, optimization, stochastic processes}
+   \resumeSubItem{Languages}{Python, TypeScript, SQL}
+   \resumeSubItem{Infrastructure}{AWS (ECS Fargate, RDS, CloudFront, ALB), Docker, FastAPI, PostgreSQL}
+   \resumeSubItem{Frontend}{React Native/Expo, Next.js/React}
+ \resumeSubHeadingListEnd
+
+\end{document}

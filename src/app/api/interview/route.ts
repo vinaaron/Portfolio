@@ -9,9 +9,9 @@ interface Message {
 
 export async function POST(request: NextRequest) {
   try {
-    const { code, problemTitle, conversationHistory } = await request.json();
+    const { problemTitle, conversationHistory } = await request.json();
 
-    if (!code || !problemTitle) {
+    if (!problemTitle) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -27,19 +27,15 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // System prompt - code comes from user messages, not here
     const systemPrompt = `You are a senior engineer at Google conducting a coding interview for "${problemTitle}".
 
-The candidate's code:
-\`\`\`python
-${code}
-\`\`\`
-
-YOUR INTERVIEWING STYLE:
-1. NEVER point out bugs or issues directly
-2. Use the Socratic method - ask questions that help THEM discover problems
-3. Start by understanding their approach before probing
-4. Build on their explanations with follow-up questions
-5. Be genuinely curious, not interrogative
+YOUR STYLE:
+- Respond to what the candidate actually said
+- Ask ONE question at a time (never 2-3 at once)
+- Acknowledge their points before asking follow-ups
+- Be genuinely curious, not interrogative
+- Use Socratic method - help them discover, don't tell
 
 QUESTION TYPES (use these, not direct hints):
 - "Can you walk me through what happens when [specific input]?"
@@ -47,22 +43,20 @@ QUESTION TYPES (use these, not direct hints):
 - "What would this return if [edge case]?"
 - "Can you trace through the code with [example]?"
 
-NEVER SAY things like:
-- "Shouldn't you use X instead?"
-- "There's a bug on line Y"
-- "You should return Z"
-- "I notice you're doing X wrong"
+NEVER:
+- Ask multiple questions in one response
+- Point out bugs directly
+- Give answers
+- Say things like "There's a bug" or "You should use X"
 
-Keep responses to 2-3 sentences. Sound like a real person having a conversation.`;
-
-    const initialPrompt = `This is the start of the interview. Ask the candidate to walk you through their approach at a high level. Don't dive into specifics yet - understand their thinking first. One question only.`;
+Keep responses to 2-3 sentences max. Sound like a real person having a conversation.`;
 
     // Build messages array
     const messages: Array<{ role: string; content: string }> = [
       { role: 'system', content: systemPrompt }
     ];
 
-    // If there's conversation history, add it
+    // Add conversation history (code is included in user messages)
     if (conversationHistory && conversationHistory.length > 0) {
       for (const msg of conversationHistory as Message[]) {
         messages.push({
@@ -70,9 +64,6 @@ Keep responses to 2-3 sentences. Sound like a real person having a conversation.
           content: msg.content
         });
       }
-    } else {
-      // Initial submission - ask first question
-      messages.push({ role: 'user', content: initialPrompt });
     }
 
     const response = await fetch(DEEPSEEK_API_URL, {
