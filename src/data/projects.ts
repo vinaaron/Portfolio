@@ -19,11 +19,11 @@ export const projects: Project[] = [
     title: "ScrollBuddy",
     tagline: "Break Free from the Feed",
     description:
-      "Anti-doomscrolling app where a friend guards your screen time. Live on the App Store: 2,000+ signups, 696 buddy connections. Blocker edits need your buddy's approval; streaks break on circumvention. 2M+ organic views.",
+      "Anti-doomscrolling app where a friend guards your screen time. Live on the App Store, rebuilt and relaunched Sep 2026: 3,000+ downloads, 696 buddy connections. Blocker edits need your buddy's approval; streaks break on circumvention. 2M+ organic views.",
     technologies: ["React Native", "App Store"],
     links: {
-      live: "https://doomscrollr.vercel.app",
-      app: "https://doomscrollr.vercel.app/scrollbuddy",
+      live: "https://www.scrollbuddy.app",
+      app: "https://apps.apple.com/app/apple-store/id6749676786?pt=127783967&ct=portfolio&mt=8",
       tiktok: [
         "https://www.tiktok.com/@doomscrollrs",
         "https://www.tiktok.com/@theonewhoneverquit",

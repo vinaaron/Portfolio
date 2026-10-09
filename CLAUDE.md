@@ -162,7 +162,7 @@ Property retrofit recommendations for UK sustainability initiative.
 
 ## Resume/CV Status
 
-- **SWE v6**: `Aaron_Vinod_Resume_SWE_v6.tex` — engineering-depth rewrite, ATS-optimized (replaces v5)
+- **SWE v8**: `Aaron_Vinod_Resume_SWE_v8.tex` — Oct 2026, Cogram 5 bullets (plain language, no product names), ScrollBuddy 3,000+ downloads + Sep 2026 relaunch, LINQ trimmed to 2
 - **MLE v5**: `Aaron_Vinod_Resume_MLE_v5.tex` — completed, ATS-optimized, LINQ dates fixed
 - **LinkedIn**: Updated with detailed experience entries (Feb 2026)
 - **Plan file**: Outreach schedule + CV strategy at `/Users/avini/.claude/plans/drifting-whistling-oasis.md`

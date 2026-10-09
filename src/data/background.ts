@@ -31,7 +31,7 @@ export const experience: ExperienceEntry[] = [
     dateRange: "Feb 2026 - Present",
     location: "Remote",
     description:
-      "Product engineering for an AI platform serving enterprise AEC firms: shipped self-serve trial onboarding (sales-led to product-led), rearchitected the mobile meeting-upload pipeline to chunked resumable S3 uploads, and run interview-driven discovery to working v0s with a multi-agent workflow.",
+      "Product engineering for an AI platform serving enterprise AEC firms: shipped the 14-day self-serve trial (sales-led to product-led), rearchitected the mobile meeting-upload pipeline to chunked resumable S3 uploads, led the first enterprise rollouts of the on-premises connector, and lead the React Native field app redesign for on-site staff.",
     isCurrent: true,
   },
   {
